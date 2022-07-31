@@ -4,9 +4,12 @@ import Navbar from './Navbar'
 export default function Intro() {
   return (
     <div>
-    <div className=" ul bg-black bg-opacity-0 lg:p-10 w-full h-full hover:bg-opacity-50 transition-all duration-1000 bg-cover bg-center bg-[url(https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/volunteer-bg-01.jpeg)]  dark:bg-slate-900  md:max-h-screen" >
+    <div className=" ul bg-black bg-opacity-0 lg:p-10 w-full h-full hover:bg-opacity-50 transition-all duration-1000 bg-cover bg-center bg-[url(https://i.ytimg.com/vi/EP6RwTMJE6s/maxresdefault.jpg)]  dark:bg-slate-900  md:max-h-screen" >
         <div className=" lg:grid  md: gap-20 lg:gap-20 xl:justify-start mt-auto ">
-        <Navbar />
+          <div className=''>
+          <Navbar />
+          </div>
+        
         <div className=" px-1 lg:px-10   gap-1 lg:gap-4 flex flex-col space-y-1 lg:space-y-4   ">
         <div>
             <h1 className='text-5xl lg:text-6xl font-bold lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white color: rgb(0 0 0); link link-underline link-underline-black  items-center justify-center   '> 

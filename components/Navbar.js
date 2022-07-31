@@ -13,7 +13,7 @@ function Navbar() {
   };
   return (
     <div className="py-0">
-       <nav className='px-1 lg:py-1 lg:space-x-10 md:px-1  lg:px-10 flex items-center flex-wrap  background-color: transparent; '>
+       <nav className=' px-1 lg:py-1 lg:space-x-10 md:px-1  lg:px-10 flex items-center flex-wrap  background-color: transparent; '>
        <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 '>
           <div className="hoverEffect text-gray-700 flex items-center justify-center xl:justify-start mt-auto">
