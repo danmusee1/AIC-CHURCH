@@ -12,10 +12,10 @@ function Navbar() {
     setActive(!active);
   };
   return (
-    <div className="py-0">
-       <nav className=' px-1 lg:py-1 lg:space-x-10 md:px-1  lg:px-10 flex items-center flex-wrap  background-color: transparent; '>
+    <div className="  ">
+       <nav className='  px-1 lg:py-0 lg:space-x-20 md:px-1  lg:px-10 flex items-center fixed flex-wrap  background-color: transparent; '>
        <Link href='/'>
-          <a className='inline-flex items-center p-2 mr-4 '>
+          <a className='inline-flex items-center  mr-20 '>
           <div className="hoverEffect text-gray-700 flex items-center justify-center xl:justify-start mt-auto">
             <img
              // onClick={signOut}
@@ -31,7 +31,7 @@ function Navbar() {
           </a>
         </Link>
         <button
-          className=' inline-flex p-3 hover:bg-green-600 rounded lg:hidden color: rgb(0 0 0); ml-auto hover:color: rgb(0 0 0); outline-none'
+          className=' inline-flex p-3 pl-20 hover:bg-blue-400 rounded lg:hidden color: rgb(0 0 0); ml-auto hover:color: rgb(0 0 0); outline-none'
           onClick={handleClick}
         >
           <svg
@@ -53,7 +53,7 @@ function Navbar() {
         <div
           className={`${
             active ? '' : 'hidden'
-          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+          }   w-full  lg:inline-flex lg:flex-grow lg:w-auto`}
         >
           <div className=' lg:inline-flex lg:flex-row lg:ml-center lg:w-center w-full lg:items-center items-start  flex flex-col lg:h-auto'>
             <Link href='/'>

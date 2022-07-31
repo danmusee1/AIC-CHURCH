@@ -2,19 +2,21 @@ import React from 'react'
 
 export default function Infocards(props) {
   return (
-    <div className="lg:flex  top-90 bottom-15 left-2 right-0 pr-9 pl-3 space-y-4 ">
-
-        <img className="h-40 w-25 mx-auto  " 
-        src={props.item.img} />
-
-        <div className="flex flex-col space-y-4 inline-block space-y-4">
-        <p className=" text-center text-2xl lg:text-4xl font-bold lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black color: rgb(0 0 0); link link-underline link-underline-black  items-center justify-center">
-            {props.item.title}
-            </p>
-    <p className="text-0.5xl lg:text-1xl block lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray  link link-underline link-underline-black  items-center justify-center">
-        {props.item.content}</p>
-        </div>
     
+    <div class="flex justify-start flex-col py-10">
+    <div class=" rounded-lg shadow-lg bg-white max-w-sm space-y-4 ">
+      <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+        <img class="rounded-t-lg" src={props.item.img} alt=""/>
+      </a>
+      <div class="p-6 py-10 ">
+        <h5 class="text-gray-900 text-xl font-medium mb-2">{props.item.title}</h5>
+        <p class="text-gray-700 text-base mb-4">
+          {props.item.content}
+        </p>
+        <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+      </div>
     </div>
+  
+  </div>
   )
 }
