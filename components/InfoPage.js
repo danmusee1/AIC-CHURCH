@@ -5,8 +5,8 @@ import Infocards from './Infocards'
 
 export default function InfoPage() {
     const cards = data.map(item =>{
-        return(
-            <div className="  flex-row  ">
+        return (
+            <div className="  lg:grid-row-1  ">
             <Infocards
             key={item.id}
             item={item}
@@ -15,8 +15,8 @@ export default function InfoPage() {
         )
     })
     return (
-        <div>
-            <section className=" space-y-0.9 pb-1 pt-10 md:flex-row ">
+        <div className=" lg:grid-row-1 ">
+            <section className=" lg:grid-row-1 ">
                 {cards}
             </section>
         </div>
@@ -24,5 +24,4 @@ export default function InfoPage() {
     )
   }
   
-
-    
+ 
