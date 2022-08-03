@@ -15,8 +15,8 @@ export default function InfoPage() {
         )
     })
     return (
-        <div className=" lg:grid-row-1 ">
-            <section className=" lg:grid-row-1 ">
+        <div className="  ">
+            <section className="  ">
                 {cards}
             </section>
         </div>

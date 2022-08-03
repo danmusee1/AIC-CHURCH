@@ -3,6 +3,7 @@ import Image from 'next/image'
 import InfoPage from '../components/InfoPage'
 import Intro from '../components/Intro'
 import Navbar from '../components/Navbar'
+import Podcast from '../components/Podcast'
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         </div>
       
       <InfoPage/>
+      <Podcast/>
     </div>
   )
 }
