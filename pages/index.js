@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Groups from '../components/Groups'
+import Groups2 from '../components/Groups2'
 import InfoPage from '../components/InfoPage'
 import Intro from '../components/Intro'
 import Navbar from '../components/Navbar'
@@ -21,10 +22,12 @@ export default function Home() {
       <div className="">
         <Intro/>
         </div>
-      
+        <Groups/>
+        <Groups2/>
       <InfoPage/>
+      
       <Podcast/>
-      <Groups/>
+      
       
     </div>
   )
