@@ -8,7 +8,7 @@ export default function Podcast() {
        <div className='pt-8  '>
 <h1 className=' text-1xl text-blue-400/75 font-bold'>WEEKLY PODCAST</h1>
 <h1 className=' text-2xl   lg:text-4xl text-blue-400 font-bold'>Deep spirituality</h1>
-<h1 className=' font-bold'>subscribe:</h1>
+<h1 className=' font-bold pt-2'>subscribe:</h1>
 
        </div>
        <div className=" ">

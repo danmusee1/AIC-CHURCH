@@ -1,12 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Groups from '../components/Groups'
 import InfoPage from '../components/InfoPage'
 import Intro from '../components/Intro'
 import Navbar from '../components/Navbar'
 import Podcast from '../components/Podcast'
 
 
+
 export default function Home() {
+  
   return (
     <div  >
       <Head>
@@ -21,6 +24,8 @@ export default function Home() {
       
       <InfoPage/>
       <Podcast/>
+      <Groups/>
+      
     </div>
   )
 }
