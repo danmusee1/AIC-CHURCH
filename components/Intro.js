@@ -1,14 +1,12 @@
 
-import Navbar from './Navbar'
+
 
 export default function Intro() {
   return (
     <div>
     <div className=" ul bg-black bg-opacity-0 lg:p-10 w-full h-full hover:bg-opacity-50 transition-all duration-1000 bg-cover bg-center bg-[url(https://i.ytimg.com/vi/EP6RwTMJE6s/maxresdefault.jpg)]  dark:bg-slate-900  md:max-h-screen" >
-        <div className=" lg:grid  md: gap-20 lg:gap-20 xl:justify-start mt-auto ">
-          <div className='  '>
-          <Navbar />
-          </div>
+        <div className=" pt-20 pb-20 ">
+        
         
         <div className="relative pt-20   px-1 lg:px-10   gap-1 lg:gap-4 flex flex-col space-y-1 lg:space-y-4   ">
         <div>
@@ -33,15 +31,7 @@ export default function Intro() {
         </div>
         
         </div>
-        <div>
-      <h1>AIC UMOJA</h1>
-    </div>
-    <div>
-      <h1>AIC UMOJA</h1>
-    </div>
-    <div>
-      <h1>AIC UMOJA</h1>
-    </div>
+      
     </div>
     
     

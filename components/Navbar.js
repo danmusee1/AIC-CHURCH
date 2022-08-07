@@ -5,6 +5,7 @@ import { BellIcon,DotsHorizontalIcon, BookmarkIcon, ClipboardIcon, DotsCircleHor
 import 'tailwindcss/tailwind.css'
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image'
 function Navbar() {
   const [active, setActive] = useState(false);
 
@@ -12,22 +13,21 @@ function Navbar() {
     setActive(!active);
   };
   return (
-    <div className="  ">
-       <nav className='  px-1 lg:py-0 lg:space-x-20 md:px-1  lg:px-10 flex items-center fixed flex-wrap  background-color: transparent; '>
+    <div className="relative   ">
+       <nav className=' fixed top-0 lg:left-10 lg:right-10    lg:py-0 lg:space-x-20   lg:px-10 flex fixed flex-wrap  background-color: transparent; '>
        <Link href='/'>
           <a className='inline-flex items-center  mr-20 '>
-          <div className="hoverEffect text-gray-700 flex items-center justify-center xl:justify-start mt-auto">
-            <img
+          <div className="hoverEffect text-gray-700 flex  items-center justify-center xl:justify-start mt-auto">
+            <Image
              // onClick={signOut}
-              src="https://scontent.fnbo2-1.fna.fbcdn.net/v/t1.6435-9/90653670_102233064759784_7030769173294743552_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=mCc8G1byi1YAX8D6oXy&_nc_ht=scontent.fnbo2-1.fna&oh=00_AT_r8rvhZIYgQpQsLHvA1bDcScb1uepyOPN9CAwoNnOaRw&oe=630A8A61"
+              src="/pics/AIC CHURCH.png"
               alt="church-img"
-              className="h-10 w-10 rounded-full xl:mr-2"
+              height="250px"
+              width="250px"
+              className="  xl:mr-2"
             />
             </div>
            
-            <span className='text-xl color: rgb(0 0 0); font-bold text-white uppercase tracking-wide'>
-              AIC UMOJA
-            </span>
           </a>
         </Link>
         <button

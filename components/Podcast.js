@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Podcast() {
 
   return (
-    <div className="bg-gray-200  max-h-[600px]    ">
+    <div className=" bg-gray-200  max-h-[600px]    ">
     <div className=" lg:flex max-w-[60%] lg:max-w-[50%] ml-10 lg:ml-20 gap-4 pt-19 pb-10   space-y-10  ">
        <div className='pt-8  '>
 <h1 className=' text-1xl text-blue-400/75 font-bold'>WEEKLY PODCAST</h1>
