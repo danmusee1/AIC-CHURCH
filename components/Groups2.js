@@ -25,11 +25,8 @@ export default function Groups2() {
         </div>
         </div>
     </div>
-<<<<<<< HEAD
    
-=======
     
->>>>>>> 4035fa15f33aa5f72792bf2511116d6943064cf1
    
     
     
