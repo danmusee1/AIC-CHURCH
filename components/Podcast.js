@@ -12,7 +12,7 @@ export default function Podcast() {
 
        </div>
        <div className=" ">
-       <Image className="rounded-t-lg " src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" alt=""  width="250px" height="250px"/>
+       <Image className="rounded-lg " src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" alt="" layout="intrinsic"  width="350px" height="420px"/>
        </div>
        <div className="lg:ml-20 lg:pt-20 ">
         <h1 className=' text-1xl text-blue-400  '>LATEST EPISODES</h1>
