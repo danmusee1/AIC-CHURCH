@@ -5,7 +5,11 @@ import { BellIcon,DotsHorizontalIcon, BookmarkIcon, ClipboardIcon, DotsCircleHor
 import 'tailwindcss/tailwind.css'
 import Link from 'next/link';
 import { useState } from 'react';
+<<<<<<< HEAD
 import Image from 'next/image'
+=======
+iimport Image from 'next/image'
+>>>>>>> 4035fa15f33aa5f72792bf2511116d6943064cf1
 function Navbar() {
   const [active, setActive] = useState(false);
 
@@ -17,14 +21,23 @@ function Navbar() {
        <nav className=' fixed top-0 lg:left-10 lg:right-10    lg:py-0 lg:space-x-20   lg:px-10 flex fixed flex-wrap  background-color: transparent; '>
        <Link href='/'>
           <a className='inline-flex items-center  mr-20 '>
+<<<<<<< HEAD
           <div className="hoverEffect text-gray-700 flex  items-center justify-center xl:justify-start mt-auto">
+=======
+          <div className="hoverEffect text-gray-700 flex items-center justify-center xl:justify-start mt-auto">
+>>>>>>> 4035fa15f33aa5f72792bf2511116d6943064cf1
             <Image
              // onClick={signOut}
               src="/pics/AIC CHURCH.png"
               alt="church-img"
+<<<<<<< HEAD
               height="250px"
               width="250px"
               className="  xl:mr-2"
+=======
+              height="10px" width="10px"
+              className="h-10 w-10 rounded-full xl:mr-2"
+>>>>>>> 4035fa15f33aa5f72792bf2511116d6943064cf1
             />
             </div>
            
