@@ -6,6 +6,7 @@ import Groups2 from '../components/Groups2'
 import InfoPage from '../components/InfoPage'
 import Intro from '../components/Intro'
 import Navbar from '../components/Navbar'
+import Newcommer from '../components/Newcommer'
 
 import Podcast from '../components/Podcast'
 
@@ -34,6 +35,7 @@ export default function Home() {
       
       <Podcast/>
       <FriendsCards/>
+      <Newcommer/>
       
       </div>
       
