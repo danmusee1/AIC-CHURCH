@@ -27,10 +27,10 @@ export default function Navbar()  {
     <div>
       
       <nav  className={`${
-            navbar ? "navbar active" : " navbar"
-          }  `}>
+            navbar ? "active" : " absolute inset-x-0 top-0 h-16 flex items-center flex-wrap"
+          } absolute inset-x-0 top-0 h-16 flex items-center flex-wrap `}>
         <Link href='/'>
-          <a className='inline-flex items-center p-2 mr-4 '>
+          <a className=' inset-x-0 top-0 h-16 inline-flex items-center p-2 mr-4 '>
           
             <Image src="/pics/AIC CHURCH.png" alt="church" height="200%" width="200%"/>
               
@@ -60,27 +60,42 @@ export default function Navbar()  {
         <div
           className={`${
             active ? '' : 'hidden'
-          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+          } w-full lg:inline-flex lg:flex-grow lg:w-auto  `}
         >
           <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white '>
-                Home
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white  items-center justify-center link link-underline link-underline-black hover:text-white '>
+              I’M NEW
               </a>
             </Link>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                Services
+              <a className='link link-underline link-underline-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center  hover:text-white'>
+              LOCATIONS
               </a>
             </Link>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                About us
+              <a className='link link-underline link-underline-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center  hover:text-white'>
+              LIVE
               </a>
             </Link>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                Contact us
+              <a className='link link-underline link-underline-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center  hover:text-white'>
+              LET’S TALK NIGHTS
+              </a>
+            </Link>
+            <Link href='/'>
+              <a className='link link-underline link-underline-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center  hover:text-white'>
+              RESOURCES
+              </a>
+            </Link>
+            <Link href='/'>
+              <a className='link link-underline link-underline-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center  hover:text-white'>
+              GIVE
+              </a>
+            </Link>
+            <Link href='/'>
+              <a className='link link-underline link-underline-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center  hover:text-white'>
+              EVENTS
               </a>
             </Link>
           </div>
