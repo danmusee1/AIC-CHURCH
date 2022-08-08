@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --primary: hsla(348,97%, 63%, 0.65);
-  --secondary: hsla(230,96%,62%,0.65);
-}
 .link-underline {
     border-bottom-width: 0;
     background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
@@ -68,4 +64,21 @@
         background-size: cover;
         color: white;
         padding: 20px;
+    }
+
+
+
+    .navbar {
+      background:transparent;
+      height:80px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    .navbar.active {
+      background: linear-gradient(90deg, rgb(129, 118, 151)0%, rgb(98, 126, 167)100%);
     }

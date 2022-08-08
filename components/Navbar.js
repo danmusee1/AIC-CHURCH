@@ -1,42 +1,44 @@
-
-
-import {  HomeIcon } from '@heroicons/react/solid'
-import { BellIcon,DotsHorizontalIcon, BookmarkIcon, ClipboardIcon, DotsCircleHorizontalIcon, HashtagIcon, InboxInIcon, UserCircleIcon} from '@heroicons/react/outline'
-import 'tailwindcss/tailwind.css'
 import Link from 'next/link';
-import { useState } from 'react';
+import React, { useState, useEffect } from "react"
 import Image from 'next/image'
 
-function Navbar() {
+export default function Navbar()  {
+  
   const [active, setActive] = useState(false);
+  const [navbar, setNavbar] = useState(false)
 
   const handleClick = () => {
     setActive(!active);
   };
+  const changeBackground=()=>{
+    console.log(window.scrollY)
+    if(window.scrollY >=80){
+  setNavbar(true)
+    }else{
+      setNavbar(false)
+    }
+  }
+  useEffect(() => {
+    changeBackground()
+    window.addEventListener("scroll", changeBackground)
+  }, []);
+
   return (
-    <div className="relative   ">
-       <nav className=' fixed top-0 lg:left-10 lg:right-10    lg:py-0 lg:space-x-20   lg:px-10 flex fixed flex-wrap  background-color: transparent; '>
-       <Link href='/'>
-          <a className='inline-flex items-center  mr-20 '>
-          <div className="hoverEffect text-gray-700 flex  items-center justify-center xl:justify-start mt-auto">
-          <div className="hoverEffect text-gray-700 flex items-center justify-center xl:justify-start mt-auto">
-            <Image
-             // onClick={signOut}
-              src="/pics/AIC CHURCH.png"
-              alt="church-img"
-              height="250px"
-              width="250px"
-              className="  xl:mr-2"
+    <div>
+      
+      <nav  className={`${
+            navbar ? "navbar active" : " navbar"
+          }  `}>
+        <Link href='/'>
+          <a className='inline-flex items-center p-2 mr-4 '>
+          
+            <Image src="/pics/AIC CHURCH.png" alt="church" height="200%" width="200%"/>
               
-              
-            />
-            </div>
-            </div>
            
           </a>
         </Link>
         <button
-          className=' inline-flex p-3 pl-20 hover:bg-blue-400 rounded lg:hidden color: rgb(0 0 0); ml-auto hover:color: rgb(0 0 0); outline-none'
+          className=' inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
           onClick={handleClick}
         >
           <svg
@@ -58,54 +60,35 @@ function Navbar() {
         <div
           className={`${
             active ? '' : 'hidden'
-          }   w-full  lg:inline-flex lg:flex-grow lg:w-auto`}
+          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
         >
-          <div className=' lg:inline-flex lg:flex-row lg:ml-center lg:w-center w-full lg:items-center items-start  flex flex-col lg:h-auto'>
+          <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white color: rgb(0 0 0); link link-underline link-underline-black  items-center justify-center   '>
-              I’M NEW
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white '>
+                Home
               </a>
             </Link>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white color: rgb(0 0 0); link link-underline link-underline-black  items-center justify-center   '>
-              LOCATIONS
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                Services
               </a>
             </Link>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white color: rgb(0 0 0); link link-underline link-underline-black  items-center justify-center   '>
-              LIVE
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                About us
               </a>
             </Link>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white color: rgb(0 0 0); link link-underline link-underline-black  items-center justify-center   '>
-              LET’S TALK NIGHTS
-                
-              </a>
-            </Link>
-            <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white color: rgb(0 0 0); link link-underline link-underline-black  items-center justify-center   '>
-              RESOURCES
-                
-              </a>
-            </Link>
-            <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white color: rgb(0 0 0); link link-underline link-underline-black  items-center justify-center   '>
-              GIVE
-                
-              </a>
-            </Link>
-            <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white color: rgb(0 0 0); link link-underline link-underline-black  items-center justify-center   '>
-              EVENTS
-                
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                Contact us
               </a>
             </Link>
           </div>
         </div>
       </nav>
+    </div>
    
-         </div>
-  
-)}
-
-export default Navbar;
+      
+   
+  );
+};
