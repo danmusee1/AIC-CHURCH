@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Footer from '../components/Footer'
 import FriendsCards from '../components/FriendsCards'
 import Groups from '../components/Groups'
 import Groups2 from '../components/Groups2'
 import InfoPage from '../components/InfoPage'
 import Intro from '../components/Intro'
 import Navbar from '../components/Navbar'
-import NavigationBar from '../components/NavigationBar'
+
 import Newcommer from '../components/Newcommer'
 
 import Podcast from '../components/Podcast'
@@ -41,7 +42,7 @@ export default function Home() {
       <Podcast/>
       <FriendsCards/>
       <Newcommer/>
-      
+      <Footer/>
       </div>
       
       
