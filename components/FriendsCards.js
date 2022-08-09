@@ -13,7 +13,11 @@ export default function FriendsCards() {
         
         <div className=" lg:flex  pl-5 pr-5  lg:ml-20 space-y-5 ml-5 mr-5 lg:space-x-5 lg:justify-center block">
             <div className="mt-5 img-hover-zoom--brightness img img-hover-zoom--brightness:hover img">
-            <Image className="rounded-lg  " src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" alt="" layout="intrinsic" width="350" height="420px"/>
+     
+              <Image className="rounded-lg  "  src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" alt="" layout="intrinsic" width="350" height="420px"/>
+             
+           
+            
             </div>
             <div className="img-hover-zoom--brightness img img-hover-zoom--brightness:hover img">
             <Image className="rounded-lg " src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" alt="" layout="intrinsic" width="350px" height="420px"/>

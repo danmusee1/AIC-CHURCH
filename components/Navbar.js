@@ -12,9 +12,10 @@ export default function Navbar()  {
   };
   const changeBackground=()=>{
     console.log(window.scrollY)
-    if(window.scrollY >=80){
+    if(window.scrollY >=1){
   setNavbar(true)
-    }else{
+    }
+    else{
       setNavbar(false)
     }
   }
@@ -27,8 +28,8 @@ export default function Navbar()  {
     <div>
       
       <nav  className={`${
-            navbar ? "active" : " absolute inset-x-0 top-0 h-16 flex items-center flex-wrap"
-          } absolute inset-x-0 top-0 h-16 flex items-center flex-wrap `}>
+            navbar ? "active" : "  inset-x-0 top-0 h-26 flex items-center flex-wrap"
+          } space-y-10 inset-x-0 top-0 h-26 flex items-center flex-wrap `}>
         <Link href='/'>
           <a className=' inset-x-0 top-0 h-16 inline-flex items-center p-2 mr-4 '>
           
@@ -38,7 +39,7 @@ export default function Navbar()  {
           </a>
         </Link>
         <button
-          className=' inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+          className=' inline-flex p-3 hover:bg-gray-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
           onClick={handleClick}
         >
           <svg
@@ -59,10 +60,10 @@ export default function Navbar()  {
         {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
         <div
           className={`${
-            active ? '' : 'hidden'
-          } w-full lg:inline-flex lg:flex-grow lg:w-auto  `}
+             active ? 'rounded bg-gradient-to-r from-indigo-900' : 'hidden'
+          }  w-full  lg:inline-flex lg:flex-grow lg:w-auto   `}
         >
-          <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
+          <div className=' lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
             <Link href='/'>
               <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white  items-center justify-center link link-underline link-underline-black hover:text-white '>
               I’M NEW

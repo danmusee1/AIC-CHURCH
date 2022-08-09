@@ -31,7 +31,7 @@ export default function Infocards(props) {
       <Image className="rounded-t-lg" src={props.item.img} alt="" width="300px" height="280px"/>
     </a>
     <div className="p-6">
-      <h5 className="text-gray-900 text-xl font-medium mb-2">{props.item.title}</h5>
+      <h5 className="text-gray-900 text-xl font-medium mb-2">Join us for a worship service</h5>
       <p className="text-gray-700 text-base mb-4">
       {props.item.content}
       </p>
