@@ -27,7 +27,7 @@ export default function FriendsCards() {
               <div className='absolute pt-20 pl-5 pr-5 inset-0 z-10   text-3xl text-white font-bold'>
               <FaLocationArrow className="text-4xl cursor-pointer hover:text-yellow-600" />
               </div>
-              <div class=" pt-60 opacity-0 bg-gradient-to-t from-indigo-500 hover:opacity-100 duration-300 absolute pl-5 pr-5 inset-0 z-10 flex justify-center items-center text-1xl text-white font-bold ">
+              <div className=" pt-60 opacity-0 bg-gradient-to-t from-indigo-500 hover:opacity-100 duration-300 absolute pl-5 pr-5 inset-0 z-10 flex justify-center items-center text-1xl text-white font-bold ">
               
                 Join us at our UMOJA AIC church.
                 </div>
@@ -54,7 +54,7 @@ export default function FriendsCards() {
               <div className='absolute pt-20 pl-5 pr-5 inset-0 z-10   text-3xl text-white font-bold'>
               <FaUserFriends className="text-4xl cursor-pointer hover:text-yellow-600" />
               </div>
-              <div class=" pt-60 opacity-0 bg-gradient-to-t from-indigo-500 hover:opacity-100 duration-300 absolute pl-5 pr-5 inset-0 z-10 flex justify-center items-center text-1xl text-white font-bold ">
+              <div className=" pt-60 opacity-0 bg-gradient-to-t from-indigo-500 hover:opacity-100 duration-300 absolute pl-5 pr-5 inset-0 z-10 flex justify-center items-center text-1xl text-white font-bold ">
               
                 Find the ministry that matches your point of life view.
                 </div>
@@ -73,7 +73,7 @@ export default function FriendsCards() {
      <div className='absolute pt-20 pl-5 pr-5 inset-0 z-10   text-3xl text-white font-bold'>
      <FaHeart className="text-4xl cursor-pointer hover:text-yellow-600" />
      </div>
-     <div class=" pt-60 opacity-0 bg-gradient-to-t from-indigo-500 hover:opacity-100 duration-300 absolute pl-5 pr-5 inset-0 z-10 flex justify-center items-center text-1xl text-white font-bold ">
+     <div className=" pt-60 opacity-0 bg-gradient-to-t from-indigo-500 hover:opacity-100 duration-300 absolute pl-5 pr-5 inset-0 z-10 flex justify-center items-center text-1xl text-white font-bold ">
      
        Find a community service effort to participate in.
        </div>
@@ -92,7 +92,7 @@ export default function FriendsCards() {
      <div className='absolute pt-20 pl-5 pr-5 inset-0 z-10   text-3xl text-white font-bold'>
      <FaTablet className="text-4xl cursor-pointer hover:text-yellow-600" />
      </div>
-     <div class=" pt-60 opacity-0 bg-gradient-to-t from-indigo-500 hover:opacity-100 duration-300 absolute pl-5 pr-5 inset-0 z-10 flex justify-center items-center text-1xl text-white font-bold ">
+     <div className=" pt-60 opacity-0 bg-gradient-to-t from-indigo-500 hover:opacity-100 duration-300 absolute pl-5 pr-5 inset-0 z-10 flex justify-center items-center text-1xl text-white font-bold ">
      
        Connnect to help you apply the bible to you life.
        </div>
