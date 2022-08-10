@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 
@@ -23,9 +24,13 @@ export default function Intro() {
             <div> 
                 <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 inline-block px-7 py-3 bg-gray-200  font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">view location</button>
                 </div>
-           <div className='pt-2'>
-           <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 inline-block px-6 py-2 border-2 border-gray-100 text-gray-50 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">watch Live stream </button>
+                <Link href="/live">
+                  
+                <div className='pt-2'>
+           <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 inline-block px-6 py-2 border-2 border-gray-100 text-gray-50 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" >watch Live stream </button>
            </div>
+           </Link>
+           
             
         </div>
         </div>
