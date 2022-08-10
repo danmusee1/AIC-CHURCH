@@ -32,7 +32,7 @@ export default function Contribution() {
                         </h1>
                 </div>
                 <div className='text-gray-500 pb-5'>
-                While in the app, navigate to "Support a charity" and search for "Bay Area Christian Church.
+                While in the app, navigate to Support a charity and search for AIC UMOJA.
                 </div>
                 <div className="flex">
                     <h1 className="font-bold">

@@ -9,18 +9,3 @@ export default[
        
        
     ];
-
-    [
-        {
-            "id": 2,
-            "title": "Join us for a worship service",
-            "content": "Visit us at our location around the Umoja Area, and get connected with people near you.",
-            "img1":"https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/pic-friends.jpg"
-        },
-        {
-            "id": 3,
-            "title": "Jesus and the Power of Storytelling",
-            "content": "A new series about the parables of Jesus and how they make God personal to us. Check out the combined library of content from both Deep Spirituality and the Bay Area Christian Church.",
-            "img2":"https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg"
-        }
-    ]
