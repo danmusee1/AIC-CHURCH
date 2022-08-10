@@ -1,6 +1,7 @@
 
+import data from './data'
 import React from 'react'
-import data from '../data'
+
 import Infocards from './Infocards'
 
 export default function InfoPage() {
