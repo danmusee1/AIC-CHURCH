@@ -74,7 +74,7 @@ export default function Navbar()  {
               LOCATIONS
               </a>
             </Link>
-            <Link href='/'>
+            <Link href='/live'>
               <a className='link link-underline link-underline-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center  hover:text-white'>
               LIVE
               </a>
