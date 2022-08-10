@@ -16,7 +16,7 @@ export default function Archive() {
                 Watch previous streams, and other clips
                 </h1>
             </div>
-            <div className="flex space-x-10">
+            <div className="lg:flex lg:space-x-10">
 
 
             <div className="relative mt-5 img-hover-zoom--brightness img img-hover-zoom--brightness:hover img">
@@ -69,7 +69,7 @@ export default function Archive() {
 
 </div>
 
-<div className="flex space-x-10">
+<div className="lg:flex lg:space-x-10">
 
 
 <div className="relative mt-5 img-hover-zoom--brightness img img-hover-zoom--brightness:hover img">
