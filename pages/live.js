@@ -2,6 +2,7 @@
 import React from 'react'
 import Archive from '../components/live/Archive'
 import Contribution from '../components/live/Contribution'
+import Form from '../components/live/Form'
 import LivePage from '../components/live/LivePage'
 
 import Navbar1 from '../components/reusable/Navbar1'
@@ -14,6 +15,7 @@ export default function live() {
       <LivePage/>
       <Contribution/>
       <Archive/>
+      <Form/>
      
     </div>
   )

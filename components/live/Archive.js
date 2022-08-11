@@ -5,7 +5,7 @@ import { FaUserFriends } from "react-icons/fa";
 
 export default function Archive() {
   return (
-    <div>
+    <div className="pb-20">
         <div className="grid justify-items-center">
             <div className="grid justify-items-center">
                 <h1 className="text-gray-900 text-3xl lg:text-4xl font-bold mb-10">
