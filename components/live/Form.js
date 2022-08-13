@@ -20,7 +20,7 @@ export default function Form() {
         </div>
       </div>
     
-    <div className=" bg-gray-400   lg:w-3/4 pt-20  lg:p-6 rounded-lg shadow-lg bg-white lg:max-w-3xl pt-10 rounded-lg">
+    <div className="    lg:w-3/4 pt-20  lg:p-6 rounded-lg shadow-lg bg-white lg:max-w-3xl pt-10 rounded-lg">
       <div className='pl-3 pr-3 grid justify-items-center'>
         <h1 className=" text-gray-900 text-3xl lg:text-4xl font-bold mb-10">
         <a className="underline decoration-8 decoration-sky-400">Connect</a> with us
