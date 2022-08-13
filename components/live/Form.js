@@ -23,7 +23,7 @@ export default function Form() {
     <div className=" bg-gray-400   lg:w-3/4 pt-20  lg:p-6 rounded-lg shadow-lg bg-white lg:max-w-3xl pt-10 rounded-lg">
       <div className='pl-3 pr-3 grid justify-items-center'>
         <h1 className=" text-gray-900 text-3xl lg:text-4xl font-bold mb-10">
-        <a class="underline decoration-8 decoration-sky-400">Connect</a> with us
+        <a className="underline decoration-8 decoration-sky-400">Connect</a> with us
         </h1>
         
         <h1 className='text-gray-500 '>
@@ -103,20 +103,20 @@ How did you find us today?*
 <div className="lg:flex place-content-between ">
   <div className=" ">
 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
-  <label className="text-blue-400 " for="vehicle1"> Watching services</label><br></br>
+  <label className="text-blue-400 " htmlFor="vehicle1"> Watching services</label><br></br>
   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"/>
-  <label className="text-blue-400 " for="vehicle2"> Virtual personal Bible studies</label><br></br>
+  <label className="text-blue-400 " htmlFor="vehicle2"> Virtual personal Bible studies</label><br></br>
   <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"/>
-  <label className="text-blue-400 " for="vehicle3">  Virtual special events</label><br></br>
+  <label className="text-blue-400 " htmlFor="vehicle3">  Virtual special events</label><br></br>
   
   </div>
   <div className='lg:mr-10 '>
   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
-  <label className="text-blue-400 "  for="vehicle1"> Virtual small group events</label><br></br>
+  <label className="text-blue-400 "  htmlFor="vehicle1"> Virtual small group events</label><br></br>
   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"/>
-  <label className="text-blue-400 "  for="vehicle2"> Virtual group Bible studies</label><br></br>
+  <label className="text-blue-400 "  htmlFor="vehicle2"> Virtual group Bible studies</label><br></br>
   <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"/>
-  <label  className="text-blue-400 " for="vehicle3">  Other</label><br></br>
+  <label  className="text-blue-400 " htmlFor="vehicle3">  Other</label><br></br>
   
   </div>
 </div>
@@ -129,27 +129,27 @@ How did you find us today?*
 <div className="lg:flex place-content-between mb-10">
   <div className="">
 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
-  <label className="text-blue-400 " for="vehicle1"> Teens</label><br></br>
+  <label className="text-blue-400 " htmlFor="vehicle1"> Teens</label><br></br>
   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"/>
-  <label className="text-blue-400 " for="vehicle2"> Professionals</label><br></br>
+  <label className="text-blue-400 " htmlFor="vehicle2"> Professionals</label><br></br>
   <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"/>
-  <label className="text-blue-400 " for="vehicle3">   Special needs support</label><br></br>
+  <label className="text-blue-400 " htmlFor="vehicle3">   Special needs support</label><br></br>
   
   </div>
   <div className="lg:mr-40">
   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
-  <label className="text-blue-400 " for="vehicle1"> College</label><br></br>
+  <label className="text-blue-400 " htmlFor="vehicle1"> College</label><br></br>
   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"/>
-  <label className="text-blue-400 " for="vehicle2"> Families</label><br></br>
+  <label className="text-blue-400 " htmlFor="vehicle2"> Families</label><br></br>
   <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"/>
-  <label className="text-blue-400 " for="vehicle3">  Children's</label><br></br>
+  <label className="text-blue-400 " htmlFor="vehicle3">  Childrens</label><br></br>
   
   </div>
 </div>
 
   </div>
   <div className="">
-  <p className=" block uppercase tracking-wide text-gray-600 text-xs font-bold mb-5"><label for="w3review">Any questions or comments?</label></p>
+  <p className=" block uppercase tracking-wide text-gray-600 text-xs font-bold mb-5"><label htmlFor="w3review">Any questions or comments?</label></p>
   <textarea className="w-full" id="w3review" name="w3review" rows="4" cols="50" placeholder="Let us know how we can help!"></textarea>
   <br></br>
   </div>
