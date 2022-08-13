@@ -65,7 +65,7 @@ export default function Navbar()  {
         >
           <div className=' lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-500  items-center justify-center link link-underline link-underline-black  '>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700  items-center justify-center link link-underline link-underline-black  '>
               I’M NEW
               </a>
             </Link>
