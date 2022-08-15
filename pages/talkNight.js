@@ -1,17 +1,18 @@
 import React from 'react'
 import TalknightPage from '../components/talknight/TalknightPage'
 
-import Navbar1 from '../components/reusable/Navbar1'
+
 import Footer from '../components/reusable/Footer'
 import WeeksEpisode from '../components/talknight/WeeksEpisode'
 import Library from '../components/talknight/Library'
 import Steps from '../components/talknight/Steps'
+import Navbar from '../components/Reusable/Navbar'
 
 
 export default function talkNight() {
   return (
     <div className=''>
-        <Navbar1 />
+        <Navbar />
         <TalknightPage/>
         <WeeksEpisode/>
         <Library/>

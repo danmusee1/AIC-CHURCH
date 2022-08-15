@@ -1,10 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
+
 import { FaLocationArrow } from "react-icons/fa";
 import { FaUserFriends } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import { FaTablet } from "react-icons/fa";
+import Link from 'next/link';
 
 export default function FriendsCards() {
   return (
@@ -17,9 +19,12 @@ export default function FriendsCards() {
         </div>
         
         <div className=" lg:flex  pl-5 pr-5  lg:ml-20 space-y-5 ml-5 mr-5 lg:space-x-5 lg:justify-center block">
+        <Link href='/talkNight'>
             <div className="relative mt-5 img-hover-zoom--brightness img img-hover-zoom--brightness:hover img">
-     
+            
+             
               <Image className="rounded-lg  "  src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg"  title="mammals" alt="" layout="intrinsic" width="350" height="420px"/>
+             
               <div className='grid justify-items-center'>
                 <h1 className=' absolute pt-20 pl-5 pr-5 inset-0 z-10  flex justify-center items-center text-3xl text-white font-bold'>
                   Find the service nearest to you.
@@ -37,13 +42,13 @@ export default function FriendsCards() {
             
             </div>
 
-
+            </Link>
            
 
 
 
 
-            
+            <Link href='/groups'>
             <div className="relative mt-5 img-hover-zoom--brightness img img-hover-zoom--brightness:hover img">
      
               <Image className="rounded-lg  "  src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg"  title="mammals" alt="" layout="intrinsic" width="350" height="420px"/>
@@ -63,6 +68,11 @@ export default function FriendsCards() {
               
             
             </div>
+
+</Link>
+
+
+
             <div className="relative mt-5 img-hover-zoom--brightness img img-hover-zoom--brightness:hover img">
      
      <Image className="rounded-lg  "  src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg"  title="mammals" alt="" layout="intrinsic" width="350" height="420px"/>
