@@ -1,5 +1,5 @@
 import React from 'react'
-import Grouping1 from './Grouping0'
+import Grouping1 from './Grouping1'
 import Grrouping2 from './Grrouping2'
 import Grouping3 from './Grouping3'
 import Grrouping4 from './Grrouping4'
