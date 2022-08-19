@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-export default function Grrouping2() {
+export default function Grrouping4() {
   return (
     <div className="  pb-20  lg:pl-20 space-y-20">
     <div className="lg:flex lg:mr-40 lg:space-x-20  lg:z-10">
@@ -18,8 +18,8 @@ export default function Grrouping2() {
  <div className=" bg-gray-400 lg:w-3/4 pt-20 justify-center block lg:p-6 rounded-lg shadow-lg bg-gray-400 lg:max-w-3xl ">
  <div className="flex pl-2 lg:pl-20 pb-20 lg:pt-20">
     <div className="pl-10 space-y-5  justify-center block p-6 rounded-lg shadow-lg bg-gray-400 max-w-sm">
-            <h1 className="text-gray-900 text-4xl font-bold mb-2">    Professionals ministry: changing how we think about life, relationships and career.</h1>
-            <h1 className="text-gray-700 text-1xl mb-4">As singles, marrieds and young families, we are building powerful friendships to help each other balance between professional success in Silicon Valley and personal life success.</h1>
+            <h1 className="text-gray-900 text-4xl font-bold mb-2"> Spiritual Resource Ministry: special needs support through inclusion.</h1>
+            <h1 className="text-gray-700 text-1xl mb-4">Exceptional children’s ministry (E-Ministry) is a family of programs practicing inclusion for typical and special needs children, serving our community. Our E-Ministries include our E-Sports programs, and Spiritual Resource Ministry (SRM).</h1>
             <button>Learn More
 </button>
         </div>
