@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Grrouping2() {
   return (
-    <div className="    lg:pl-20 space-y-20">
+    <div className="  pb-20  lg:pl-20 space-y-20">
     <div className="lg:flex lg:mr-40 lg:space-x-20  lg:z-10">
    
         <div className="absolute   pt-20 col-span-12 md:col-span-auto md:col-start-7 md:col-end-13 md:row-start-1 md:row-end-1 -mt-8 md:mt-0 relative z-10 px-4 md:px-0  ">
