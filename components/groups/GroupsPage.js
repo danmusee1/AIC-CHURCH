@@ -6,14 +6,14 @@ import Grrouping4 from './Grrouping4'
 import Grouping5 from './Grouping5'
 import Grrouping6 from './Grrouping6'
 import Background from './Background'
-import Navbar1 from '../reusable/Navbar1'
+import Navbar from '../reusable/Navbar'
 import Footer from '../reusable/Footer'
 import Form from '../live/Form'
 
 export default function GroupsPage() {
   return (
     <div>
-        <Navbar1/>
+        <Navbar/>
         <Background/>
         <Grouping1/>
         <Grrouping2/>
