@@ -22,8 +22,8 @@ Get involved in one of our doing good projects.</h1>
             </div>
             
             <div className=" lg:pl-40">
-    <Image className="relative" src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" height="300px" width="300px" />
-    <Image className="absolute" src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" height="300px" width="300px" />
+    <Image className="relative" src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" alt="imageback" height="300px" width="300px" />
+    <Image className="absolute" src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" alt="image" height="300px" width="300px" />
 </div>
         
         </div>
