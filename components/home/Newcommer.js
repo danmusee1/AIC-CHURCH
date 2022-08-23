@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link';
+import { FaArrowAltCircleRight } from "react-icons/fa";
 
 export default function Newcommer() {
   return (
@@ -13,6 +15,15 @@ export default function Newcommer() {
           </div>
           <h1 className="text-white-700 text-lg ">Visit our First Steps page to get an overview of all the ways to </h1>
           <h1 className="text-white-700 text-lg mb-4">get involved with the AIC.</h1>
+          <Link href='/imNew'>
+          <div className="pt-10">
+            <button className="flex ease-out duration-300 py-2 px-4 bg-gray-400 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-gray-900 text-1xl font-bold mb-2">
+            <FaArrowAltCircleRight className=" text-4xl text-blue-500 cursor-pointer hover:text-yellow-600" />
+              <h1 className='pl-1 pt-1'>Get started</h1>
+            </button>
+          </div>
+          </Link>
+          
         </div>
       </div>
       </div>
