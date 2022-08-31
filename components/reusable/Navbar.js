@@ -33,7 +33,7 @@ export default function Navbar()  {
         <Link href='/'>
           <a className=' inset-x-0 top-0 h-16 inline-flex items-center p-2 mr-4 '>
           
-            <Image src={"/pics/AIC CHURCH.svg"} alt="church" height="50px" width="200px"/>
+            <Image src={"/pics/AIC CHURCH.png"} alt="church" height="50px" width="200px"/>
               
            
           </a>
@@ -84,17 +84,17 @@ export default function Navbar()  {
               LETS TALK NIGHTS
               </a>
             </Link>
-            <Link href='/'>
+            <Link href='/resources'>
               <a className='link link-underline link-underline-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center  hover:text-white'>
               RESOURCES
               </a>
             </Link>
-            <Link href='/'>
+            <Link href='/give'>
               <a className='link link-underline link-underline-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center  hover:text-white'>
               GIVE
               </a>
             </Link>
-            <Link href='/'>
+            <Link href='/events'>
               <a className='link link-underline link-underline-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center  hover:text-white'>
               EVENTS
               </a>

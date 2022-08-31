@@ -84,17 +84,17 @@ export default function Navbar1()  {
               LETS TALK NIGHTS
               </a>
             </Link>
-            <Link href='/'>
+            <Link href='/resources'>
               <a className='link link-underline link-underline-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center  '>
               RESOURCES
               </a>
             </Link>
-            <Link href='/'>
+            <Link href='/give'>
               <a className='link link-underline link-underline-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center  '>
               GIVE
               </a>
             </Link>
-            <Link href='/'>
+            <Link href='/events'>
               <a className='link link-underline link-underline-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center '>
               EVENTS
               </a>

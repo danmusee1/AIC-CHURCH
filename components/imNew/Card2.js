@@ -5,19 +5,19 @@ import { FaPeopleCarry } from "react-icons/fa";
 export default function Card2() {
   return (
     <div>
-          <div className="lg:flex lg:space-x-40 pl-2 lg:pl-10  pb-20 lg:pt-20">
-          <div className="container lg:w-1/2  ">
+          <div className="lg:flex lg:space-x-40  pl-2 lg:pl-2  pb-20 lg:pt-20">
+          <div className="container lg:pr-80  ">
               
               <div className="img1 ">
             <Image className="img1 rounded-lg "  src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" height="350px" width="350px"/>
           </div>
-          <div className="img2">
+          <div className="img2 ">
             <Image className="img2 rounded-lg  "  src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" height="350px" width="350px"/>
           </div>
             
             
             </div>
-            <div className="  lg:pr-20 justify-center block p-6 rounded-lg shadow-lg  ">
+            <div className=" lg:pr-10 justify-center block p-6 rounded-lg shadow-lg  ">
             <FaPeopleCarry className=" text-6xl text-blue-500 cursor-pointer hover:text-yellow-600" />
                 <h1 className="pb-2 pt-10 text-sky-900 text-2xl lg:text-4xl font-bold mb-2">    
 
