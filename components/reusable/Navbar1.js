@@ -30,13 +30,14 @@ export default function Navbar1()  {
       <nav  className={`${
             navbar ? "active" : "fixed z-40 w-full  inset-x-0 top-0 h-26 flex items-center flex-wrap"
           } space-y-10 inset-x-0 top-0 h-26 flex items-center flex-wrap fixed z-40 w-full `}>
+       
         <Link href='/'>
-          <a className=' inset-x-0 top-0 h-16 inline-flex items-center p-2 mr-4 '>
+          <div className=' inset-x-0 top-0 h-16 inline-flex items-center p-2 mr-4 '>
           
             <Image src={"/pics/AIC CHURCH.png"} alt="AIC UMOJA" height="50px" width="200px"/>
               
            
-          </a>
+          </div>
         </Link>
         <button
           className=' inline-flex p-3 hover:bg-red-500 rounded lg:hidden text-red-700 ml-auto hover:text-red-900 outline-none'
