@@ -34,7 +34,7 @@ export default function Navbar()  {
           <a className=' inset-x-0 top-0 h-16 inline-flex items-center p-2 mr-4 '>
           
 
-            <Image src={"/pics/AIC CHURCH.png"} alt="church" height="50px" width="200px"/>
+            <Image src={"https://github.com/rayzeydmusee/AIC-CHURCH/blob/main/public/pics/AIC%20CHURCH.png?raw=true"} alt="church" height="50px" width="200px"/>
 
 
               
