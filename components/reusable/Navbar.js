@@ -33,7 +33,11 @@ export default function Navbar()  {
         <Link href='/'>
           <a className=' inset-x-0 top-0 h-16 inline-flex items-center p-2 mr-4 '>
           
+<<<<<<< HEAD
             <Image src={"/pics/AIC CHURCH.png"} alt="church" height="50px" width="200px"/>
+=======
+            <Image src={""} alt="AIC UMOJA" height="50px" width="200px"/>
+>>>>>>> 9c623905d9cc19185ab0b311882713e859d81ec6
               
            
           </a>
