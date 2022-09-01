@@ -36,21 +36,25 @@ export default function Steps() {
                     <h1 className='text-white text-2xl  lg:text-lg lg:font-bold'>Assemble your crew</h1>
                 </div>
              </div>
-            <div className='lg:flex lg:justify-end lg:pb-80  pb-40 lg:pl-20 lg:pr-20'>
-                <div className='lg:pr-10  '>
-            <div className='   rounded-lg bg-violet-300   pt-3  pl-5'>
-                <div className=' '>
-                <Image className="rounded-lg " src="https://th.bing.com/th/id/R.7797c22bf017c85b50eec31b4496aa9c?rik=%2fQqpEaKT0nd6%2fQ&pid=ImgRaw&r=0" alt="" height="200px" width="350px"/>
-                </div>
+            <div className='lg:flex lg:justify-end lg:pb-80  pb-40 lg:pl-20 '>
+            <div className="container lg:w-1/2 ">
+              
+              <div className="img1 ">
+            <Image className="img1 rounded-lg "  src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" height="250px" width="250px"/>
+          </div>
+          <div className="img2  ">
+            <Image className="img2 rounded-lg  "  src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" height="250px" width="250px"/>
+          </div>
+            
+            
             </div>
-            </div>
-            <div className='grid justify-center block pt-10'>
-                <h1 className="text-white text-2xl pb-5 lg:text-lg font-bold">
+            <div className='lg:w-1/3 grid justify-center block pt-10'>
+                <h1 className="text-white text-2xl pb-5 lg:text-xl font-bold">
                 To have a great discussion, you need some great friends.
                 </h1>
-                <h1 className="text-white text-sm lg:text-lg lg:font-bold">
-                Pick a weeknight and meet with your house<br></br> church in a living 
-                room or backyard. You can <br></br> invite other friends to join in the conversation too.
+                <h1 className="text-white text-sm lg:text-lg lg:font-semibold">
+                Pick a weeknight and meet with your house church in a living 
+                room or backyard. You can  invite other friends to join in the conversation too.
                 </h1>
             </div>
             </div>
@@ -65,24 +69,29 @@ export default function Steps() {
                 </div>
                 <div className=''>
                     <h1 className='text-white text-4xl pb-5 lg:text-4xl font-bold'>Step 2</h1>
-                    <h1 className='text-white text-2xl  lg:text-lg lg:font-bold'>Watch together</h1>
+                    <h1 className='text-white text-2xl  lg:text-lg lg:font-semibold'>Watch together</h1>
                 </div>
              </div>
-            <div className='lg:flex lg:justify-end lg:pb-80   pb-40 lg:pl-20 lg:pr-20'>
-                <div className='lg:pr-10  '>
-            <div className='   rounded-lg bg-violet-300   pt-3  pl-5'>
-                <div className=' '>
-                <Image className="rounded-lg " src="https://th.bing.com/th/id/R.7797c22bf017c85b50eec31b4496aa9c?rik=%2fQqpEaKT0nd6%2fQ&pid=ImgRaw&r=0" alt="" height="200px" width="350px"/>
-                </div>
+            <div className='lg:flex lg:justify-end lg:pb-80   pb-40 lg:pl-20 '>
+            <div className="container lg:w-1/2 ">
+              
+              <div className="img1 ">
+            <Image className="img1 rounded-lg "  src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" height="250px" width="250px"/>
+          </div>
+          <div className="img2  ">
+            <Image className="img2 rounded-lg  "  src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" height="250px" width="250px"/>
+          </div>
+            
+            
             </div>
-            </div>
-            <div className='grid justify-center block pt-10'>
-                <h1 className="text-white text-2xl pb-5 lg:text-lg font-bold">
-                To have a great discussion, you need some great friends.
+            <div className='lg:w-1/3 grid justify-center block pt-10'>
+                <h1 className="text-white text-2xl pb-5 lg:text-xl font-bold">
+                Grab a device and make yourselves comfortable.
                 </h1>
-                <h1 className="text-white text-sm lg:text-lg lg:font-bold">
-                Pick a weeknight and meet with your house<br></br> church in a living 
-                room or backyard. You can <br></br> invite other friends to join in the conversation too.
+                <h1 className="text-white text-sm lg:text-lg lg:font-semibold">
+                Well provide new digital content each week for you and your 
+                friends to watch. This segment 
+                will last about 15 minutes and will be designed to spur great conversations.
                 </h1>
             </div>
             </div>
@@ -102,23 +111,27 @@ export default function Steps() {
                     <h1 className='text-white text-2xl  lg:text-lg lg:font-bold'>Talk it over</h1>
                 </div>
              </div>
-            <div className='lg:flex lg:justify-end lg:pb-10   pb-20 lg:pl-20 lg:pr-20'>
-                <div className='lg:pr-10  '>
-            <div className='   rounded-lg bg-violet-300   pt-3  pl-5'>
-                <div className=' '>
-                <Image className="rounded-lg " src="https://th.bing.com/th/id/R.7797c22bf017c85b50eec31b4496aa9c?rik=%2fQqpEaKT0nd6%2fQ&pid=ImgRaw&r=0" alt="" height="200px" width="350px"/>
-                </div>
+             <div className='lg:flex lg:justify-end lg:pb-80  pb-40 lg:pl-20 '>
+            <div className="container lg:w-1/2 ">
+              
+              <div className="img1 ">
+            <Image className="img1 rounded-lg "  src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" height="250px" width="250px"/>
+          </div>
+          <div className="img2  ">
+            <Image className="img2 rounded-lg  "  src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" height="250px" width="250px"/>
+          </div>
+            
+            
             </div>
-            </div>
-            <div className='grid justify-center block pt-10'>
-                <h1 className="text-white text-2xl pb-5 lg:text-lg font-bold">
-                To have a great discussion, you need some great friends.
+            <div className='lg:w-1/3 grid pt-5 justify-center block'>
+                <h1 className="text-white text-2xl pb-5 lg:text-xl font-bold">
+                Let down about what youre thinking and feeling.
                 </h1>
-                <h1 className="text-white text-sm lg:text-lg lg:font-bold">
-                Pick a weeknight and meet with your house<br></br> church in a living 
-                room or backyard. You can <br></br> invite other friends to join in the conversation too.
+                <h1 className="text-white text-sm lg:text-lg lg:font-semibold">
+                Sharing our thoughts, feelings, and desires makes the church a
+                 place where we are known and can know people,
+                 where we can grow together as we serve our communities.
                 </h1>
-                
             </div>
             </div>
 
