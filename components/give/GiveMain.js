@@ -5,9 +5,9 @@ import BackgroundGive from './BackgroundGive'
 import BackgroundGivedown from './BackgroundGivedown'
 import GivePayments from './GivePayments'
 import IntroGive from './IntroGive'
-import PaypalGive from './Routepayment/PaypalGive'
+
 import QuestionsGive from './QuestionsGive'
-import CreditCard from './Routepayment/CreditCard'
+
 
 
 
@@ -18,8 +18,8 @@ export default function GivesMain() {
        <BackgroundGive/>
        <IntroGive/>
        <GivePayments/>
-       <PaypalGive/>
-       <CreditCard/>
+       
+       
        <QuestionsGive/>
        <BackgroundGivedown/>
        

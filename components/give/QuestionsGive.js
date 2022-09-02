@@ -15,7 +15,7 @@ export default function QuestionsGive() {
     
        
       
-    <div >
+    <div className='pt-10' >
         <div className="grid  place-content-center">
             <div className="pl-10  pr-10 grid  place-content-center pb-10 lg:pb-20">
                 <h1 className='text-cyan-700 text-center  text-2xl lg:text-4xl font-bold mb-2'>Frequently asked questions</h1>
