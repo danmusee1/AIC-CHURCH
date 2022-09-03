@@ -19,7 +19,7 @@ export default function FriendsCards() {
         </div>
         
         <div className=" lg:flex  pl-5 pr-5  lg:ml-20 space-y-5 ml-5 mr-5 lg:space-x-5 lg:justify-center block">
-        <Link href='/talkNight'>
+        <Link href='/location'>
             <div className="relative mt-5 img-hover-zoom--brightness img img-hover-zoom--brightness:hover img">
             
              
@@ -72,7 +72,7 @@ export default function FriendsCards() {
 </Link>
 
 
-
+              <Link href="/volunteer">
             <div className="relative mt-5 img-hover-zoom--brightness img img-hover-zoom--brightness:hover img">
      
      <Image className="rounded-lg  "  src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg"  title="mammals" alt="" layout="intrinsic" width="350" height="420px"/>
@@ -87,14 +87,14 @@ export default function FriendsCards() {
      
        Find a community service effort to participate in.
        </div>
-     </div>
-     
-     
-   
+     </div>      
    </div>
+   </Link>
+
+
+  <Link href="/media">
    <div className="relative mt-5 img-hover-zoom--brightness img img-hover-zoom--brightness:hover img">
-     
-     <Image className="rounded-lg  "  src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg"  title="mammals" alt="" layout="intrinsic" width="350" height="420px"/>
+      <Image className="rounded-lg  "  src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg"  title="mammals" alt="" layout="intrinsic" width="350" height="420px"/>
      <div className='grid justify-items-center'>
        <h1 className='absolute pt-20 pl-5 pr-5 inset-0 z-10 flex justify-center items-center text-3xl text-white font-bold'>
         Grow spiritually with online tools.
@@ -106,11 +106,12 @@ export default function FriendsCards() {
      
        Connnect to help you apply the bible to you life.
        </div>
-     </div>
-     
-     
-   
+     </div>    
    </div>
+   </Link>
+
+
+
          </div>
         </div>
     </div>

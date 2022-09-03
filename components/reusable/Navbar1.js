@@ -66,11 +66,11 @@ export default function Navbar1()  {
         >
           <div className=' lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
             <Link href='/imNew'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700  items-center justify-center link link-underline link-underline-black  '>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-rose-900 font-semibold  items-center justify-center link link-underline link-underline-black  '>
               IM NEW
               </a>
             </Link>
-            <Link href='/'>
+            <Link href='/location'>
               <a className='link link-underline link-underline-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center  '>
               LOCATIONS
               </a>
