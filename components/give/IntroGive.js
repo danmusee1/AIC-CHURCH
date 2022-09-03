@@ -25,7 +25,7 @@ export default function IntroGive() {
             </div>
             </div>
             <div className="pr-5 pl-5 lg:pr-20">
-                <Image className="" src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2021/08/giving-pic-01.jpeg" alt="" width="900px" height="700px"/>
+                <Image className="" src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2021/08/giving-pic-01.jpeg" alt="image" width="900px" height="700px"/>
             </div>
 
         </div>

@@ -39,7 +39,7 @@ export default function MailCheck() {
           
           </div>
           <div className=' lg:pr-20 lg:p-4 md:p-8 bg-white shadow-lg img-hover-zoom--point-zoom:hover img img-hover-zoom--point-zoom img'>
-          <Image className="" src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/donate-02.jpg" alt="" height="500" width="700"/>
+          <Image className="" src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/donate-02.jpg" alt="image" height="500" width="700"/>
           </div>
         </div>
     </div>

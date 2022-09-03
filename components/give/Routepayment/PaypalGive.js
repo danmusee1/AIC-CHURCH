@@ -35,7 +35,7 @@ export default function PaypalGive() {
           
           </div>
           <div className=' lg:pr-20 lg:p-4 md:p-8 bg-white shadow-lg img-hover-zoom--point-zoom:hover img img-hover-zoom--point-zoom img'>
-          <Image className="" src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/give-01.jpg" alt="" height="900" width="600"/>
+          <Image className="" src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/give-01.jpg" alt="image" height="900" width="600"/>
           </div>
         </div>
     </div>
