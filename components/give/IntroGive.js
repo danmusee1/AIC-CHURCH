@@ -39,8 +39,8 @@ export default function IntroGive() {
                 <h1 className="text-center text-gray-500 text-lg pb-5 ">
                 Thank you for your interest in donating to the Bay Area Christian 
                 Church general fund. We are grateful for your contribution. 
-                If you have any questions about giving, email us at giving@AIC.cc.
-                 For questions about donating stock, email us at stockdonations@AIC.cc.
+                If you have any questions about giving, email us at aicumoja.nrb@gmail.com.
+                 For questions about donating stock, email us at aicumoja.nrb@gmail.com.
                 </h1>
 
             </div>

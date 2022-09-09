@@ -7,7 +7,7 @@ export default function IntroLocation() {
   return (
     <div className='pr-5 pl-5 lg:pl-20 lg:pr-10'>
         <div className="lg:flex lg:space-x-10">
-        <div className="lg:w-1/2  ">
+        <div className="lg:w-1/2 pb-10  ">
             <h1 className="pb-5 text-4xl font-bold text-slate-900">
             Find a location near you!
 
@@ -31,10 +31,10 @@ export default function IntroLocation() {
     </button>
    </div>
             </div>
-            <div className='lg:flex justify-end lg:pl-20 lg:pr-20 '>
-            <div className=" ">
+            <div className=' lg:flex justify-end lg:pl-20 lg:pr-20 '>
+            <div className=" pb-20">
             <FaLocationArrow className="pb-5 text-6xl cursor-pointer text-blue-400 hover:text-red-600" />
-            <h1 className="pt-10 pb-5 text-3xl font-bold text-slate-800">
+            <h1 className="pt-5 lg:pt-10 pb-5 text-3xl font-bold text-slate-800">
             Nairobi Umoja
 
             </h1>
@@ -43,11 +43,11 @@ export default function IntroLocation() {
                 
             </h1>
             <h1 className=" text-gray-600 text-base">
-            AIC Grounds
+            Pewa street
                 
             </h1>
             <h1 className="pb-7 text-gray-600  text-base">
-            Moi Drive Rd, Umoja
+            Off Moi Drive Rd, Umoja 1 Nairobi, Kenya
                 
             </h1>
             <h1 className=" text-gray-800 font-semibold text-lg">
@@ -65,7 +65,7 @@ export default function IntroLocation() {
 
             <div className="lg:pl-5 ">
             <FaLocationArrow className="pb-5 text-6xl cursor-pointer text-blue-400 hover:text-red-600" />
-            <h1 className="pt-10 pb-5 text-3xl font-bold text-slate-800">
+            <h1 className="pt-5 lg:pt-10 pb-5 text-3xl font-bold text-slate-800">
             Nairobi Umoja
 
             </h1>
@@ -74,11 +74,11 @@ export default function IntroLocation() {
                 
             </h1>
             <h1 className=" text-gray-600 text-base">
-            AIC Grounds
+            Pewa street
                 
             </h1>
             <h1 className="pb-7 text-gray-600  text-base">
-            Moi Drive Rd, Umoja
+            Off Moi drive, Umoja 1 Nairobi, Kenya
                 
             </h1>
             <h1 className=" text-gray-800 font-semibold text-lg">

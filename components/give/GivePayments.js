@@ -29,10 +29,11 @@ export default function GivePayments() {
             <FaPaypal onClick={()=> setShowline3(!showline3) || setShowp(!showp)} 
             className="pb-5 text-7xl cursor-pointer text-blue-400 hover:text-red-600" >
             {showp === true ? "hide Div" : "show Div"}
+            {showline3=== true ? "hide Div" : "show Div"}
             </FaPaypal>
             <h1 className="font-semibold text-lg   ">Paypal</h1>
             {
-            showline3 &&
+            !showline3 &&
             <div className="pt-4 linepaypal "></div>
             }
           </div>
@@ -80,7 +81,7 @@ export default function GivePayments() {
             </FaMoneyBill>
              <h1 className="font-semibold text-lg">Mpesa</h1>
              {
-             !showline2 &&
+             showline2 &&
      <div className="pt-4 linepaypal "></div>
      }
             </div>
@@ -96,7 +97,7 @@ export default function GivePayments() {
        
        
        
-       showp &&
+       !showp &&
      
      <PaypalGive/> 
      ||
@@ -110,7 +111,7 @@ export default function GivePayments() {
      <MailCheck/> 
      ||
 
-     !showmpesa &&
+     showmpesa &&
      
      <Mpesa/> 
      }

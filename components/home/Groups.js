@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Groups() {
   return (
@@ -17,7 +18,11 @@ export default function Groups() {
             <div className="pl-10 space-y-5  justify-center block p-6 rounded-lg shadow-lg bg-gray-400 max-w-sm">
                 <h1 className="text-gray-900 text-4xl font-bold mb-2">    Build Family with others in your stage of life.</h1>
                 <h1 className="text-gray-700 text-1xl mb-4">Church is great, but dont let the experience end when the service does. Our ministries meet in small groups outside of weekly services for fun activities, community service and group Bible discussions.</h1>
-                <button>View ministries</button>
+                <Link href="groups">
+                
+                <button className="animate-bounce text-green-900 ">view ministries</button>
+  
+                </Link>
             </div>
             
            

@@ -21,10 +21,11 @@ export default function MailCheck() {
             </div>
         <div className='pl-10'>
         <h1 className=' text-gray-500 text-lg pb-5'> 
-        2479 E. Bayshore Rd Ste 185
+        Pewa street, Off Moi drive, 
         </h1>
         <h1 className=' text-gray-500 text-lg pb-5'> 
-        Palo Alto CA 94303
+        
+Umoja 1 Nairobi, Kenya
         </h1>
         </div>
         
