@@ -261,4 +261,29 @@
   background-color: lightblue;
   margin-top: 20px;
 }
+/* Overlap image */
 
+.container{
+  position: relative;
+  width: 200px;
+  height: 300px;
+  
+  
+}
+.imge1{
+ 
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  top: 100px;
+  left: 100px;
+ 
+  
+}
+.imge2{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 70%;
+  left: 0;
+}

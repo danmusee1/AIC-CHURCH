@@ -8,7 +8,7 @@ export default function BackgroundLocation() {
     <div id='location_downbackground1'className=''>
       <div className="pt-20   grid justify-items-center"> 
       <div className="grid pb-5 lg:pb-5  ">
-        <h1 className="  text-white-900 text-5xl lg:text-6xl font-bold mb-2">
+        <h1 className=" pt-10 text-white-900 text-5xl lg:text-6xl font-bold mb-2">
         Location</h1>
         
         </div>
