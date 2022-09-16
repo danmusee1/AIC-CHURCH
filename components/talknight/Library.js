@@ -3,13 +3,13 @@ import { FaUserFriends } from "react-icons/fa";
 
 export default function Library() {
   return (
-    <div className="pb-20">
+    <div className="pb-40 shapedividers_com-7586">
         <div className="grid justify-items-center">
             <div className="grid justify-items-center">
             <h1 className="text-gray-500 text-1xl lg:text-1xl font-bold mb-2">
             LETS TALK
                 </h1>
-                <h1 className="text-gray-900 text-3xl lg:text-4xl font-bold mb-10">
+                <h1 className="pt-5 text-gray-900 text-3xl lg:text-4xl font-bold mb-10">
                 Browse library
 
                 </h1>

@@ -3,7 +3,7 @@ import { FaBook } from "react-icons/fa";
 
 export default function WeeksEpisode() {
   return (
-    <div className='lg:flex'>
+    <div className='bg-fuchsia-50 lg:flex'>
         <div className="lg:pt-10 pl-5 lg:pl-20 pr-5 lg:w-1/2 ">
             <div    className="">
                 <h1 className="text-gray-500 text-1xl lg:text-1xl font-bold mb-2">

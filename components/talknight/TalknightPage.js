@@ -3,13 +3,7 @@ import Image from 'next/image'
 
 export default function TalknightPage() {
   return (
-  
-
-
-
-
-
-    <div className='transition-all duration-1000'>
+    <div className='shapedividers_com-6153 transition-all duration-1000'>
         <div className="rounded-b-full pb-20 lg:pb-80 bg-gray-900  lg:flex flex-row-reverse pt-20  lg:pt-40 ">
      <div className="pr-5 pb-5 pl-5">
         <Image src="https://media.gettyimages.com/photos/detail-of-the-youtube-logo-outside-the-youtube-space-studios-in-on-picture-id1149449091" alt="image" height="1251%" width="2050%"/>
