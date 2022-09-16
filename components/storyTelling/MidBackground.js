@@ -95,7 +95,7 @@ export default function MidBackground() {
             </h1>
             <h1 className='text-base  text-gray-400'>
             Real conversations digging deeper into the personally 
-            transformative power of Jesus' parables.
+            transformative power of Jesus parables.
                 </h1>
           </div>
             </div>
