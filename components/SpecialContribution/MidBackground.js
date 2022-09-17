@@ -23,7 +23,7 @@ export default function MidBackground() {
                  It also gives us a chance to build our faith about investing in Gods Kingdom.
                     </h1>
             </div>
-            <div className="pr-5 pb-5 pl-5">
+            <div className=" pb-5">
         <Image className='rounded-lg' src="https://media.gettyimages.com/photos/detail-of-the-youtube-logo-outside-the-youtube-space-studios-in-on-picture-id1149449091" alt="image" height="600px" width="700px"/>
       </div>
          
