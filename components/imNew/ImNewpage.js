@@ -1,5 +1,5 @@
 import React from 'react'
-import Form from '../live/Form'
+import FormImNew from './FormImNew'
 import Navbar1 from '../reusable/Navbar1'
 import BackgroundImnew from './BackgroundImnew'
 import Card2 from './Card2'
@@ -16,7 +16,7 @@ export default function ImNewpage() {
        <Cardin/>
         <Card2/>
         <Card3/>
-        <Form/>
+        <FormImNew/>
         
     </div>
   )

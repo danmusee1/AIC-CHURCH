@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from "next/link"
 export default function Podcast() {
 
   return (
@@ -19,9 +20,9 @@ export default function Podcast() {
        </div>
        <div className="ml-5 pt-10 lg:pt-40 ">
         <h1 className=' text-1xl text-blue-400  '>LATEST EPISODES</h1>
-        <a href="#!">
-      <h1 className='underline decoration-2  underline-offset-8 font-bold'>Visit Website</h1>
-    </a>
+        <Link href="/media">
+      <h1 className='cursor-pointer link link-underline link-underline-black underline decoration-2  underline-offset-8 font-bold'>Visit Website</h1>
+    </Link>
        </div>
     </div>
     </div>
