@@ -23,8 +23,8 @@ export default function MidBackground() {
                  It also gives us a chance to build our faith about investing in Gods Kingdom.
                     </h1>
             </div>
-            <div className="rounded-lg">
-              <Image className="rounded-lg" src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2022/07/about-01b.jpeg " alt="image" height=" 500px" width="500px"/>
+            <div className="">
+              <Image className="rounded-lg" src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2022/07/about-01b.jpeg " alt="image" height=" 900px" width="900px"/>
             </div>
          
           
