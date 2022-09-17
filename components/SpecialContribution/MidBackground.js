@@ -10,7 +10,7 @@ export default function MidBackground() {
         <div id='storytellingmid_background'className=' scroll shapedividers_com-4494 '>
           <div className='lg:flex lg:pl-20  lg:pt-40'>
             <div className="lg:w-1/2 lg:pr-20">
-            <h1 className='pb-5 pt-10 font-bold text-lg text-gray-900'>
+            <h1 className='pb-5 pt-10 font-bold text-lg text-gray-500'>
                 
                 Why we give
                 </h1>
@@ -24,7 +24,7 @@ export default function MidBackground() {
                     </h1>
             </div>
             <div className="rounded-lg">
-              <Image className="rounded-lg" src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2022/07/about-01b.jpeg " alt="image" height=" 900px" width="900px"/>
+              <Image className="rounded-lg" src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2022/07/about-01b.jpeg " alt="image" height=" 500px" width="500px"/>
             </div>
          
           
