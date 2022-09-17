@@ -8,7 +8,7 @@ export default function BackgroundSpecialContribution() {
         <div id='specialcontribution_background'className='shapedividers_com-6696 '>
           <div className="pt-40    grid justify-items-center"> 
           <div className="grid  pb-5 lg:pb-10  ">
-            <h1 className=" font-serif text-white-900 text-5xl lg:text-7xl font-bold mb-2">
+            <h1 className="text-center font-serif text-white-900 text-5xl lg:text-7xl font-bold mb-2">
     
             The Heart of a  </h1>
 <h1 className="font-serif grid justify-items-center text-white-900 text-5xl lg:text-7xl font-bold mb-2">
