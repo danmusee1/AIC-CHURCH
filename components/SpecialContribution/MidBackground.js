@@ -24,7 +24,7 @@ export default function MidBackground() {
                     </h1>
             </div>
             <div className="pr-5 pb-5 pl-5">
-        <Image src="https://media.gettyimages.com/photos/detail-of-the-youtube-logo-outside-the-youtube-space-studios-in-on-picture-id1149449091" alt="image" height="1251%" width="2050%"/>
+        <Image className='rounded-lg' src="https://media.gettyimages.com/photos/detail-of-the-youtube-logo-outside-the-youtube-space-studios-in-on-picture-id1149449091" alt="image" height="600px" width="700px"/>
       </div>
          
           
