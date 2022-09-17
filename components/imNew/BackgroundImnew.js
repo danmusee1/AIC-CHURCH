@@ -5,7 +5,7 @@ export default function Newcommer() {
   return (
     <div>
     <div className="  pb-20 ">
-    <div id='imnewpage_background'className=''>
+    <div id='imnewpage_background'className='shapedividers_com-5131'>
       <div className="pt-60   grid justify-items-center"> 
       <div className="grid pb-5 lg:pb-10  ">
         <h1 className="  text-white-900 text-5xl lg:text-8xl font-bold mb-2">

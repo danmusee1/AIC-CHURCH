@@ -6,7 +6,7 @@ export default function Intro() {
   return (
     <div>
             <div className="  pb-20 ">
-    <div id='intropage_background'className=''>
+    <div id='intropage_background'className='shapedividers_com-546'>
     <div className=" pt-20 pb-20 ">
         
         
