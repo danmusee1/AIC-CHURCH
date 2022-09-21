@@ -1,11 +1,27 @@
 import Image from 'next/image'
+import {motion} from "framer-motion"
 import React from 'react'
 import Link from 'next/link';
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
 export default function Newcommer() {
   return (
-    <div>
+    <motion.div
+    initial={{
+      x:-200,
+      opacity:0,
+  }}
+  transition={{
+      duration:2.2,
+  }}
+  whileInView={{
+      opacity:1,
+      x:0,
+  }}
+  viewport={{
+      once:true,
+  }}
+    >
       <div className="pl-5 pr-5 lg:pl-20 lg:pr-20 pb-20 ">
       <div id='newcommer_background'className=''>
         <div className="pt-20 grid justify-items-center"> 
@@ -27,7 +43,7 @@ export default function Newcommer() {
         </div>
       </div>
       </div>
-    </div>
+    </motion.div>
     
   )
 }

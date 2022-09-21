@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from "next/link"
+import {motion} from "framer-motion"
 export default function Podcast() {
 
   return (
@@ -18,11 +19,49 @@ export default function Podcast() {
        <div className="pl-10 pt-20 relative lg:pl-40  pr-10">
        <Image className="rounded-lg   " src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/deep-spirituality-podcast.jpg" alt=""   height="200%" width="200%"/>
        </div>
-       <div className="ml-5 pt-10 lg:pt-40 ">
-        <h1 className=' text-1xl text-blue-400  '>LATEST EPISODES</h1>
+       <div
+       
+       className="ml-5 pt-10 lg:pt-40 ">
+    <motion.div
+       
+       initial={{
+         x:-100,
+         opacity:0,
+     }}
+     transition={{
+         duration:1.2,
+     }}
+     whileInView={{
+         opacity:1,
+         x:0,
+     }}
+  viewport={{
+      once:true,
+  }} >
+    <h1 className=' text-1xl text-blue-400  '>LATEST EPISODES</h1>
+    </motion.div>
+       
+    <motion.div
+       
+       initial={{
+         x:-100,
+         opacity:0,
+     }}
+     transition={{
+         duration:2.2,
+     }}
+     whileInView={{
+         opacity:1,
+         x:0,
+     }}
+  viewport={{
+      once:true,
+  }} >
         <Link href="/media">
       <h1 className='cursor-pointer link link-underline link-underline-black underline decoration-2  underline-offset-8 font-bold'>Visit Website</h1>
     </Link>
+        </motion.div>
+        
        </div>
     </div>
     </div>

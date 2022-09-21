@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import {motion} from "framer-motion"
 
 import { FaLocationArrow } from "react-icons/fa";
 import { FaUserFriends } from "react-icons/fa";
@@ -18,7 +19,23 @@ export default function FriendsCards() {
             <h1 className="lg:pl-20 text-gray-700 lg:text-2xl mb-4">check out different ways to get involved with AIC</h1>
         </div>
         
-        <div className=" lg:flex  pl-5 pr-5  lg:ml-20 space-y-5 ml-5 mr-5 lg:space-x-5 lg:justify-center block">
+        <motion.div 
+         initial={{
+          y:-100,
+          opacity:0,
+      }}
+      transition={{
+          duration:2.2,
+      }}
+      whileInView={{
+          opacity:1,
+          y:0
+          
+      }}
+      viewport={{
+        once:true,
+    }}
+        className=" lg:flex  pl-5 pr-5  lg:ml-20 space-y-5 ml-5 mr-5 lg:space-x-5 lg:justify-center block">
         <Link href='/location'>
             <div className="relative mt-5 img-hover-zoom--brightness img img-hover-zoom--brightness:hover img">
             
@@ -112,7 +129,7 @@ export default function FriendsCards() {
 
 
 
-         </div>
+         </motion.div>
         </div>
     </div>
   )

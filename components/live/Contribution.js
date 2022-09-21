@@ -3,6 +3,7 @@ import { FaPaypal } from "react-icons/fa";
 import { FaCreditCard } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaMailBulk } from "react-icons/fa";
+import {motion} from "framer-motion"
 
 export default function Contribution() {
   return (
@@ -23,9 +24,24 @@ export default function Contribution() {
         <div className="lg:flex lg:space-x-10  space-y-10 pl-5 pr-10 lg:pl-20 lg:pr-20 pt-10 pb-10">
             
             <div className='lg:pt-10 '>
-                <div>
+            <motion.div
+       
+       initial={{
+         x:-100,
+         opacity:0,
+     }}
+     transition={{
+         duration:2.2,
+     }}
+     whileInView={{
+         opacity:1,
+         x:0,
+     }}
+  viewport={{
+      once:true,
+  }} >
                 <FaPaypal className="pb-5 text-8xl cursor-pointer text-blue-400 hover:text-red-600" />
-                </div>
+                </motion.div>
                 <div className="text-gray-900 text-1xl lg:text-1xl font-bold mb-5">
                     <h1>
                         Download the PayPal app or visit their site.
@@ -44,9 +60,24 @@ export default function Contribution() {
 
 
                 <div className=' '>
-                <div>
+                <motion.div
+       
+       initial={{
+         x:-100,
+         opacity:0,
+     }}
+     transition={{
+         duration:2.2,
+     }}
+     whileInView={{
+         opacity:1,
+         x:0,
+     }}
+  viewport={{
+      once:true,
+  }} >
                 <FaCreditCard className="pb-5 text-8xl cursor-pointer text-blue-400 hover:text-red-600" />
-                </div>
+                </motion.div>
                 <div className="text-gray-900 text-1xl lg:text-1xl font-bold mb-5">
                     <h1>
                     Donate on our website via credit card
@@ -65,9 +96,24 @@ export default function Contribution() {
 
 
                 <div className=' '>
-                <div>
+                <motion.div
+       
+       initial={{
+         x:-100,
+         opacity:0,
+     }}
+     transition={{
+         duration:2.2,
+     }}
+     whileInView={{
+         opacity:1,
+         x:0,
+     }}
+  viewport={{
+      once:true,
+  }} >
                 <FaShoppingCart className="pb-5 text-8xl cursor-pointer text-blue-400 hover:text-red-600" />
-                </div>
+                </motion.div>
                 <div className="text-gray-900 text-1xl lg:text-1xl font-bold mb-5">
                     <h1>
                     Schedule automatic contributions with bill pay.
@@ -87,9 +133,24 @@ export default function Contribution() {
 
 
                 <div className=' '>
-                <div>
+                <motion.div
+       
+       initial={{
+         x:-100,
+         opacity:0,
+     }}
+     transition={{
+         duration:2.2,
+     }}
+     whileInView={{
+         opacity:1,
+         x:0,
+     }}
+  viewport={{
+      once:true,
+  }} >
                 <FaMailBulk className="pb-5 text-8xl cursor-pointer text-blue-400 hover:text-red-600" />
-                </div>
+                </motion.div>
                 <div className="text-gray-900 text-1xl lg:text-1xl font-bold mb-5">
                     <h1>
                     Want to keep it old school? Mail a check.
