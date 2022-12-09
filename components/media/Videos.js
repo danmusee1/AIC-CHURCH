@@ -26,7 +26,7 @@ export const Videos = () => {
                         <div className='grid md:grid-cols-4 grid-cols-1 gap-5'>
                             {
                                 videos.map((video) =>(
-                                    <div className='md:mx-0 mx-5 w-72 h-60 rounded-lg'>
+                                    <div key={video.id} className='md:mx-0 mx-5 w-72 h-60 rounded-lg'>
                                         <Image key={video.id} src={video.thumbnailUrl} width='70' height='70'/>
                                         <h3 key={video.id}>{video.title}</h3>
                                         </div>

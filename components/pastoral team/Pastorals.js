@@ -25,7 +25,7 @@ export const Pastorals = () => {
                         <div className='grid md:grid-cols-4 grid-cols-1 gap-5'>
                             {
                                 profiles.map((profile) =>(
-                                    <div className='md:mx-0 mx-5 w-72 h-60 rounded-lg'>
+                                    <div key={profile.id} className='md:mx-0 mx-5 w-72 h-60 rounded-lg'>
                                         <h3 key={profile.id}>{profile.name}</h3>
                                         <h3 key={profile.id}>{profile.email}</h3>
                                         </div>
