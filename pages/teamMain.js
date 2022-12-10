@@ -1,5 +1,5 @@
 import React from 'react'
-import TeamMemBackground from '../components/pastoral team/TeammemBackground'
+import TeamMemBackground from '../components/pastoral team/TeamMemBackground'
 import { TeamMembers } from '../components/pastoral team/TeamMembers'
 import Footer from '../components/reusable/Footer'
 import Navbar1 from '../components/reusable/Navbar1'
