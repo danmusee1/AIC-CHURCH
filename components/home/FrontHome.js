@@ -6,6 +6,7 @@ import InfoPage from './InfoPage'
 import Podcast from './Podcast'
 import FriendsCards from './FriendsCards'
 import Newcommer from './Newcommer'
+import { Pastorals } from '../pastoral team/Pastorals'
 
 export default function FrontHome() {
   return (
@@ -14,9 +15,9 @@ export default function FrontHome() {
     <div className="space-y-20 ">
       
       <Intro/>
+  
       
-      
-      
+      <Pastorals/>
       <Groups/>
       <Groups2/>
     <InfoPage/>

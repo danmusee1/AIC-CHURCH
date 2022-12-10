@@ -11,7 +11,7 @@ export default function Navbar()  {
     setActive(!active);
   };
   const changeBackground=()=>{
-    console.log(window.scrollY)
+    
     if(window.scrollY >=1){
   setNavbar(true)
     }

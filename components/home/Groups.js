@@ -8,7 +8,7 @@ export default function Groups() {
         <div className="lg:flex flex-row-reverse lg:z-10">
         <div className="absolute   lg:pt-20 col-span-12 md:col-span-auto md:col-start-7 md:col-end-13 md:row-start-1 md:row-end-1 -mt-8 md:mt-0 relative lg:z-10 lg:px-4 md:px-0  ">
             <div className="p-4 md:p-8 bg-white shadow-lg img-hover-zoom--point-zoom:hover img img-hover-zoom--point-zoom img">
-            <Image className=" absolute inset-0 w-full h-full object-cover" src="https://352zl3r81ot2rnkzo1r0n6uj-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/pic-friends.jpg" alt="" height="500px" width="600px"/>
+            <Image className=" absolute inset-0 w-full h-full object-cover" src="https://bacc.cc/wp-content/uploads/2019/10/pic-friends.jpg" alt="" height="500px" width="600px"/>
         </div>
         </div>
 
