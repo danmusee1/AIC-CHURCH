@@ -27,7 +27,7 @@ export const Pastorals = () => {
                     <div className="flex justify-center items-center">
                         <div className='grid md:grid-cols-4 grid-cols-1 gap-5'>
                             {
-                                pastorals.map((pastoral) =>(
+                                pastorals.filter((item, index) => index < 4).map((pastoral) =>(
                                     <div key={pastoral.id} className='md:mx-0 mx-5 w-72 h-60 rounded-lg w-64 mx-auto bg-[#20354b] rounded-2xl px-8 py-6 shadow-lg mb-10'>
                                         <div className="flex items-center justify-between">
             <span className="text-gray-400 text-sm">position</span>

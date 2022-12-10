@@ -25,7 +25,7 @@ export const Videos = () => {
                     <div className="flex justify-center items-center">
                         <div className='grid md:grid-cols-4 grid-cols-1 gap-5'>
                             {
-                                videos.map((video) =>(
+                                videos.filter((item, index) => index < 5).map((video) =>(
                                     <div key={video.id} className='md:mx-0 mx-5 w-72 h-60 rounded-lg'>
                                         <Image key={video.id} src={video.thumbnailUrl} alt="" width='70' height='70'/>
                                         <h3 key={video.id}>{video.title}</h3>
