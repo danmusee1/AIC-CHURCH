@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import Intro from './Intro'
 import Groups from './Groups'
@@ -15,8 +16,6 @@ export default function FrontHome() {
     <div className="space-y-20 ">
       
       <Intro/>
-  
-      
       <Pastorals/>
       <Groups/>
       <Groups2/>
