@@ -20,7 +20,7 @@ Team</h1>
               God can reach everyone, anywhere, all the time, and he works through us to do it.</h1>
             <div className='pt-10 grid justify-items-center lg:flex lg:space-x-10'>
             <button className="flex  border-4 border-indigo-500/100 ease-out duration-300 py-2 px-4  text-gray-100 font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-1xl border-slate-800  font-bold mb-2">
-                Make a Donaton
+                Join the Team
                 <FaArrowCircleRight className="pl-2 text-2xl text-gray-300 cursor-pointer hover:text-yellow-600" />
                 </button>
             <button className="flex border-4 border-indigo-500/100ease-out duration-300 py-2 px-4  text-blue-100 font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-1xl border-slate-800  font-bold mb-2">
