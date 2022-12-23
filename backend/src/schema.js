@@ -3,7 +3,7 @@ const { buildSchema } = require('graphql');
 const schema = buildSchema(`
 type Query {
   members: [Member]
-  member(id: Int!): Member
+  member(member_id: ID): Member
   groups: [Group]
   group(id: Int!): Group
   groupMembers(groupId: Int!): [Member]
@@ -14,7 +14,22 @@ type Query {
 }
 
 type Mutation {
-  createMember(name: String!, email: String, phone: String): Member
+  createMember(
+    first_name: String!
+    last_name: String!
+    date_of_birth: String!
+    phone: String!
+    email: String!
+    address: String!
+    city: String!
+    state: String!
+    zip: String!
+    membership_date: String!
+    parent_id: Int!
+    ): Member
+
+
+
   updateMember(id: Int!, name: String, email: String, phone: String): Member
   deleteMember(id: Int!): Member
   createGroup(name: String!, leaderId: Int!): Group
@@ -30,10 +45,18 @@ type Mutation {
 }
 
 type Member {
-  id: Int!
-  name: String!
-  email: String
+  member_id: ID
+  first_name: String
+  last_name: String
+  date_of_birth: String
   phone: String
+  email: String
+  address: String
+  city: String
+  state: String
+  zip: String
+  membership_date: String
+  parent_id: Int
 }
 
 type Group {
