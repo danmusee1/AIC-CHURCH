@@ -1,8 +1,8 @@
 const express = require('express');
 const { graphqlHTTP } = require('express-graphql');
-
+const { Kind } = require('graphql/language');
 const app = express();
-const { buildSchema } = require('graphql');
+const { buildSchema, GraphQLList } = require('graphql');
 const { GraphQLSchema,GraphQLObjectType,GraphQLInt, GraphQLString,GraphQLScalarType } = require('graphql');
 const { GraphQLNonNull } = require('graphql');
 
@@ -37,20 +37,21 @@ const GraphQLDate = new GraphQLScalarType({
 
 const MemberType = new GraphQLObjectType({
   name: 'Member',
-  fields: {
-    
-    first_name: { type: GraphQLString },
+  description:"This represents a member of the church.",
+  fields:() => ({
+    member_id:{type:GraphQLInt},
+    first_name: { type: GraphQLNonNull(GraphQLString) },
     last_name: { type: GraphQLNonNull(GraphQLString) },
-    date_of_birth: { type: GraphQLNonNull(GraphQLString) },
+    date_of_birth: { type: GraphQLNonNull(GraphQLDate) },
     phone: { type: GraphQLNonNull(GraphQLString) },
     email: { type: GraphQLNonNull(GraphQLString) },
     address: { type: GraphQLNonNull(GraphQLString) },
     city: { type: GraphQLNonNull(GraphQLString) },
     state: { type: GraphQLNonNull(GraphQLString) },
-    zip: { type: GraphQLNonNull(GraphQLString) },
-    membership_date: { type: GraphQLNonNull(GraphQLString) },
-    parent_id: { type: GraphQLNonNull(GraphQLString) }
-  }
+    zip: { type:GraphQLNonNull(GraphQLString) },
+    membership_date: { type:GraphQLNonNull(GraphQLDate) },
+    parent_id: { type: GraphQLInt }
+  })
 });
 
 
@@ -60,8 +61,8 @@ const root = {
     const result = await pool.query('SELECT * FROM members');
     return result.rows;
   },
-  member: async ({ id }) => {
-    const result = await pool.query('SELECT * FROM members WHERE id = $1', [id]);
+  member: async ({ member_id }) => {
+    const result = await pool.query('SELECT * FROM members WHERE member_id = $1', [member_id]);
     return result.rows[0];
   },
   groups: async () => {
@@ -106,10 +107,10 @@ const root = {
     );
     return result.rows;
   },
-  createMember: async ({  first_name,last_name,date_of_birth,phone, email, address, city,state,zip,membership_date,parent_id }) => {
+  createMember: async ({ first_name,last_name,date_of_birth,phone, email, address, city,state,zip,membership_date,parent_id  }) => {
     const result = await pool.query(
       'INSERT INTO members (first_name,last_name,date_of_birth,phone, email, address, city,state,zip,membership_date,parent_id ) VALUES ($1, $2, $3,$4,$5,$6,$7,$8,$9,$10,$11) RETURNING *',
-      [first_name,last_name,date_of_birth,phone, email, address, city,state,zip,membership_date,parent_id ]
+      [first_name,last_name,date_of_birth,phone, email, address, city,state,zip,membership_date,parent_id  ]
     );
     return result.rows[0];
   },
@@ -161,47 +162,57 @@ const root = {
   },
 }
 
-
-const schema = new GraphQLSchema({
-  query: new GraphQLObjectType({
-    name: 'Query',
-    fields: {
-      member: {
-        type: MemberType,
-        args: {
-          id: { type: GraphQLInt }
-        },
-        resolve: (_, { id }, context, info) => {
-          // fetch member with the given id from the database
-        }
-      }
-    }
-  }),
-  mutation: new GraphQLObjectType({
+const RootQueryType= new GraphQLObjectType({
+  name: 'Query',
+  fields: () =>({
+    members: {
+      type:new GraphQLList(MemberType) ,
+      description:"LIST OF ALL MEMBERS",
+     resolve:root.members
+    },
+    member: {
+      type:MemberType ,
+      description:"A single member",
+      args:{
+        member_id:{type: GraphQLInt}
+      },
+     resolve:root.member
+    },
+  })
+})
+   
+  
+  const RootMutationType = new GraphQLObjectType({
     name: 'Mutation',
-    fields: {
+    description:"Root Mutation",
+    resolve: root.createMember,
+    fields: () =>( {
       createMember: {
         type: MemberType,
+        description:"Add a new member",
         args: {
           
-          first_name: { type: GraphQLString },
-          last_name: { type: GraphQLNonNull(GraphQLString) },
-          date_of_birth: { type: GraphQLNonNull(GraphQLString) },
-          phone: { type: GraphQLNonNull(GraphQLString) },
-          email: { type: GraphQLNonNull(GraphQLString) },
-          address: { type: GraphQLNonNull(GraphQLString) },
-          city: { type: GraphQLNonNull(GraphQLString) },
-          state: { type: GraphQLNonNull(GraphQLString) },
-          zip: { type: GraphQLNonNull(GraphQLString) },
-          membership_date: { type: GraphQLNonNull(GraphQLString) },
-          parent_id: { type: GraphQLNonNull(GraphQLString) }
+          first_name: { type: GraphQLNonNull(GraphQLString) },
+    last_name: { type: GraphQLNonNull(GraphQLString) },
+    date_of_birth: { type: GraphQLNonNull(GraphQLDate) },
+    phone: { type: GraphQLNonNull(GraphQLString) },
+    email: { type: GraphQLNonNull(GraphQLString) },
+    address: { type: GraphQLNonNull(GraphQLString) },
+    city: { type: GraphQLNonNull(GraphQLString) },
+    state: { type: GraphQLNonNull(GraphQLString) },
+    zip: { type:GraphQLNonNull(GraphQLString) },
+    membership_date: { type:GraphQLNonNull(GraphQLDate) },
+    parent_id: { type: GraphQLInt }
         },
-        resolve: root.createMember
+       
       }
-    }
+    })
   })
-});
 
+  const schema=new GraphQLSchema({
+    query:RootQueryType,
+    mutation:RootMutationType
+   })
 
 app.use('/graphql', graphqlHTTP({
   schema: schema,
