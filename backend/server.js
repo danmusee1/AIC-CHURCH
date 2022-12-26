@@ -96,8 +96,8 @@ const root = {
     const result = await pool.query('SELECT * FROM events');
     return result.rows;
   },
-  event: async ({ id }) => {
-    const result = await pool.query('SELECT * FROM events WHERE id = $1', [id]);
+  event: async ({ member_id }) => {
+    const result = await pool.query('SELECT * FROM events WHERE member_id = $1', [1]);
     return result.rows[0];
   },
   attendance: async ({ eventId }) => {
@@ -107,14 +107,14 @@ const root = {
     );
     return result.rows;
   },
-  createMember: async ({ first_name,last_name,date_of_birth,phone, email, address, city,state,zip,membership_date,parent_id  }) => {
+  createMember: async ({ member_id,first_name,last_name,date_of_birth,phone, email, address, city,state,zip,membership_date,parent_id  }) => {
     const result = await pool.query(
-      'INSERT INTO members (first_name,last_name,date_of_birth,phone, email, address, city,state,zip,membership_date,parent_id ) VALUES ($1, $2, $3,$4,$5,$6,$7,$8,$9,$10,$11) RETURNING *',
-      [first_name,last_name,date_of_birth,phone, email, address, city,state,zip,membership_date,parent_id  ]
+      'INSERT INTO members (member_id ,first_name,last_name,date_of_birth,phone, email, address, city,state,zip,membership_date,parent_id) VALUES ($1, $2, $3,$4,$5,$6,$7,$8,$9,$10,$11,$12) RETURNING *',
+      [member_id,first_name,last_name,date_of_birth,phone, email, address, city,state,zip,membership_date,parent_id  ]
     );
     return result.rows[0];
   },
-  updateMember: async ({ id, first_name,last_name,date_of_birth,phone, email, address, city,state,zip,membership_date,parent_id }) => {
+  updateMember: async ({ member_id, first_name,last_name,date_of_birth,phone, email, address, city,state,zip,membership_date,parent_id }) => {
     const query = 'UPDATE members SET';
     const values = [];
     if (first_name) {
@@ -150,13 +150,13 @@ const root = {
     if (parent_id) {
       values.push(`parent_id = '${parent_id}'`);
     }
-    query += ` ${values.join(', ')} WHERE id = ${id} RETURNING *`;
+    query += ` ${values.join(', ')} WHERE member_id = ${member_id} RETURNING *`;
     const result = await pool.query(query);
     return result.rows[0];
   },
-  deleteMember: async ({ id }) =>{
-    const result = await pool.query('DELETE FROM users WHERE id = $1 RETURNING *', [
-      id,
+  deleteMember: async ({ member_id }) =>{
+    const result = await pool.query('DELETE FROM members WHERE member_id = $1 RETURNING *', [
+      member_id,
     ]);
     return result.rows[0];
   },
@@ -173,10 +173,17 @@ const RootQueryType= new GraphQLObjectType({
     member: {
       type:MemberType ,
       description:"A single member",
-      resolve:root.member,
+    
       args:{
         member_id:{type: GraphQLInt}
       },
+      resolve: (_, { member_id },await, context, info) => {
+        // fetch member with the given id from the database
+        const result =  pool.query('SELECT * FROM members WHERE member_id=$1 ', [member_id]);
+        return result.rows[0];
+      }
+
+     
      
     },
   })
@@ -192,7 +199,7 @@ const RootQueryType= new GraphQLObjectType({
         type: MemberType,
         description:"Add a new member",
         args: {
-          
+          member_id:{type: GraphQLInt},
           first_name: { type: GraphQLNonNull(GraphQLString) },
     last_name: { type: GraphQLNonNull(GraphQLString) },
     date_of_birth: { type: GraphQLNonNull(GraphQLDate) },
@@ -206,9 +213,33 @@ const RootQueryType= new GraphQLObjectType({
     parent_id: { type: GraphQLInt }
         },
        
+      },
+      deleteMember:{
+        type:MemberType,
+        description:"remove a Member",
+        resolve:root.deleteMember,
+        args:{
+          member_id:{
+            type:new GraphQLNonNull(GraphQLInt)
+          },
+         
+        }
+      },
+      updateMember:{
+        type:MemberType,
+        description:'update a member',
+        args: {
+          member_id:{type: GraphQLInt},
+          first_name: { type: GraphQLNonNull(GraphQLString) },
+  
+        },
+        resolve:root.updateMember
+
       }
     })
   })
+
+ 
 
   const schema=new GraphQLSchema({
     query:RootQueryType,
