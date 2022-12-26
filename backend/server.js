@@ -61,8 +61,8 @@ const root = {
     const result = await pool.query('SELECT * FROM members');
     return result.rows;
   },
-  member: async ({ member_id }) => {
-    const result = await pool.query('SELECT * FROM members WHERE member_id = $1', [member_id]);
+  member: async ({ member_id}) => {
+    const result = await pool.query('SELECT * FROM members WHERE member_id=$1 ', [member_id]);
     return result.rows[0];
   },
   groups: async () => {
@@ -173,10 +173,11 @@ const RootQueryType= new GraphQLObjectType({
     member: {
       type:MemberType ,
       description:"A single member",
+      resolve:root.member,
       args:{
         member_id:{type: GraphQLInt}
       },
-     resolve:root.member
+     
     },
   })
 })
