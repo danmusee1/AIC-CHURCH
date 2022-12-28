@@ -15,6 +15,7 @@ type Query {
 
 type Mutation {
   createMember(
+    member_id: ID,
     first_name: String!
     last_name: String!
     date_of_birth: String!
@@ -25,13 +26,27 @@ type Mutation {
     state: String!
     zip: String!
     membership_date: String!
-    parent_id: Int!
+    parent_id: Int
     ): Member
 
 
 
-  updateMember(id: Int!, name: String, email: String, phone: String): Member
-  deleteMember(id: Int!): Member
+  updateMember(member_id: ID! 
+    first_name: String
+    last_name: String
+    date_of_birth: String
+    phone: String
+    email: String
+    address: String
+    city: String
+    state: String
+    zip: String
+    membership_date: String
+    parent_id: Int): Member
+
+  deleteMember(member_id: Int!): Member
+
+  
   createGroup(name: String!, leaderId: Int!): Group
   updateGroup(id: Int!, name: String, leaderId: Int): Group
   deleteGroup(id: Int!): Group
@@ -93,3 +108,4 @@ type Attendance {
 
 
 `);
+module.exports = schema;
