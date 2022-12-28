@@ -1,14 +1,18 @@
 import React, {useEffect,useState} from 'react'
+import { useQuery } from '@apollo/client';
+import gql from 'graphql-tag';
 import Link from 'next/link';
 import Image from 'next/image'
 //usestate used to track states
 //useeffect used to render API AFTER FETCHING OR LOADING
 
+
 export const Pastorals = () => {
+ 
     const[pastorals, setPastorals]= useState([]); //having initialvalue as null array
 
     const fetchData=() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
+        fetch('http://localhost:4000/graphql')
            .then(response => response.json()) //returns url data as json format
            .then(data => {
                 setPastorals(data); //after having the data in json format i am ready to use and track the state also
@@ -39,11 +43,11 @@ export const Pastorals = () => {
             </span>
         </div>
                                 <div className="mt-6 w-fit mx-auto ">
-                                        <Image className="rounded-full w-28 " key={pastoral.id} src="https://api.lorem.space/image/face?w=120&h=120&hash=bart89fe" alt="" width='70' height='70'/>
+                                        <Image className="rounded-full w-28 " key={pastoral.member_id} src="https://api.lorem.space/image/face?w=120&h=120&hash=bart89fe" alt="" width='70' height='70'/>
                                         </div>
                                         <h3 className="text-white font-bold text-2xl tracking-wide" key={pastoral.id}>{pastoral.name}</h3>
-                                        <h3 className='text-white' key={pastoral.id}>{pastoral.email}</h3>
-                                        <h3 className='text-white ' key={pastoral.id}>{pastoral.phone}</h3>
+                                        <h3 className='text-white' key={pastoral.member_id}>{pastoral.email}</h3>
+                                        <h3 className='text-white ' key={pastoral.member_id}>{pastoral.phone}</h3>
                                         
                                         </div>
                                 ))
@@ -63,9 +67,3 @@ export const Pastorals = () => {
     )
  
 }
-
-
-
-
-
-

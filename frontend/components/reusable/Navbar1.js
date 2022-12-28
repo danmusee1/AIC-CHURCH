@@ -34,7 +34,7 @@ export default function Navbar1()  {
         <Link href='/'>
           <div className=' inset-x-0 top-0 h-16 inline-flex items-center p-2 mr-4 '>
           
-            <Image src={"https://github.com/rayzeydmusee/AIC-CHURCH/blob/main/public/pics/AIC%20CHURCH.png?raw=true"} alt="AIC UMOJA" height="50px" width="200px"/>
+            <Image src={"https://raw.githubusercontent.com/danmusee1/AIC-CHURCH/main/frontend/public/pics/AIC%20CHURCH%20LOGO.png"} alt="AIC UMOJA" height="50px" width="200px"/>
             
            
           </div>
