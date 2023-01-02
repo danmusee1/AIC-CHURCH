@@ -17,42 +17,9 @@ const pool = new pg.Pool({
   password: 'MOZNE2R4KI',
   port: 5432,
 });
-const GraphQLDate = new GraphQLScalarType({
-  name: 'GraphQLDate',
-  description: 'A date value in the format yyyy-mm-dd',
-  parseValue(value) {
-    return new Date(value);
-  },
-  serialize(value) {
-    return value.toISOString().slice(0, 10);
-  },
-  parseLiteral(ast) {
-    if (ast.kind === Kind.STRING) {
-      return new Date(ast.value);
-    }
-    return null;
-  }
-});
 
 
-const MemberType = new GraphQLObjectType({
-  name: 'Member',
-  description:"This represents a member of the church.",
-  fields:() => ({
-    member_id:{type: GraphQLID},
-    first_name: { type: GraphQLNonNull(GraphQLString) },
-    last_name: { type: GraphQLNonNull(GraphQLString) },
-    date_of_birth: { type: GraphQLNonNull(GraphQLDate) },
-    phone: { type: GraphQLNonNull(GraphQLString) },
-    email: { type: GraphQLNonNull(GraphQLString) },
-    address: { type: GraphQLNonNull(GraphQLString) },
-    city: { type: GraphQLNonNull(GraphQLString) },
-    state: { type: GraphQLNonNull(GraphQLString) },
-    zip: { type:GraphQLNonNull(GraphQLString) },
-    membership_date: { type:GraphQLNonNull(GraphQLDate) },
-    parent_id: { type: GraphQLInt }
-  })
-});
+
 
 
 // Define root GraphQL resolvers
@@ -69,22 +36,22 @@ const root = {
     const result = await pool.query('SELECT * FROM groups');
     return result.rows;
   },
-  group: async ({ id }) => {
-    const result = await pool.query('SELECT * FROM groups WHERE member_id = $1', [member_id]);
+  group: async ({ group_id }) => {
+    const result = await pool.query('SELECT * FROM groups WHERE group_id = $1', [group_id]);
     return result.rows[0];
   },
-  groupMembers: async ({ groupId }) => {
+  group_members: async ({ group_id }) => {
     const result = await pool.query(
-      'SELECT m.* FROM members m INNER JOIN group_members gm ON m.id = gm.member_id WHERE gm.group_id = $1',
-      [groupId]
+      'SELECT m.member_id, m.first_name, m.last_name FROM members m LEFT JOIN group_members gm ON m.member_id = gm.member_id WHERE gm.group_id = $1',
+      [group_id]
     );
     return result.rows;
   },
-  giving: async ({ memberId }) => {
-    if (memberId) {
+  giving: async ({ member_id }) => {
+    if (member_id) {
       const result = await pool.query(
         'SELECT * FROM giving WHERE member_id = $1',
-        [memberId]
+        [member_id]
       );
       return result.rows;
     } else {
@@ -100,10 +67,10 @@ const root = {
     const result = await pool.query('SELECT * FROM events WHERE member_id = $1', [1]);
     return result.rows[0];
   },
-  attendance: async ({ eventId }) => {
+  attendance: async ({ event_id }) => {
     const result = await pool.query(
       'SELECT * FROM attendance WHERE event_id = $1',
-      [eventId]
+      [event_id]
     );
     return result.rows;
   },
@@ -129,7 +96,17 @@ const root = {
   },
 }
 
+function groupLeaderResolver(group) {
+  const member_id = group.group_leader;
+  const member = Member.findOne({ member_id });
+  return member;
+}
 
+const resolvers = {
+  Group: {
+    groupLeader: groupLeaderResolver
+  }
+}
 
 app.use('/graphql', graphqlHTTP({
   schema: schema,

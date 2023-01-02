@@ -12,7 +12,7 @@ export const Pastorals = () => {
     const[pastorals, setPastorals]= useState([]); //having initialvalue as null array
 
     const fetchData=() => {
-        fetch('http://localhost:4000/graphql')
+        fetch('')
            .then(response => response.json()) //returns url data as json format
            .then(data => {
                 setPastorals(data); //after having the data in json format i am ready to use and track the state also

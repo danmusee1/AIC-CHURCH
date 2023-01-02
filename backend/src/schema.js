@@ -3,19 +3,19 @@ const { buildSchema } = require('graphql');
 const schema = buildSchema(`
 type Query {
   members: [Member]
-  member(member_id: ID): Member
+  member(member_id: Int): Member
   groups: [Group]
-  group(id: Int!): Group
-  groupMembers(groupId: Int!): [Member]
-  giving(memberId: Int): [Giving]
+  group(group_id: Int!): Group
+  group_members(group_id: Int!): [Member]
+  giving(member_id: Int): [Giving]
   events: [Event]
-  event(id: Int!): Event
-  attendance(eventId: Int!): [Attendance]
+  event(event_id: Int!): Event
+  attendance(event_id: Int!): [Attendance]
 }
 
 type Mutation {
   createMember(
-    member_id: ID,
+    member_id: Int,
     first_name: String!
     last_name: String!
     date_of_birth: String!
@@ -31,7 +31,7 @@ type Mutation {
 
 
 
-  updateMember(member_id: ID! 
+  updateMember(member_id: Int! 
     first_name: String
     last_name: String
     date_of_birth: String
@@ -47,12 +47,15 @@ type Mutation {
   deleteMember(member_id: Int!): Member
 
   
-  createGroup(name: String!, leaderId: Int!): Group
-  updateGroup(id: Int!, name: String, leaderId: Int): Group
-  deleteGroup(id: Int!): Group
-  addGroupMember(groupId: Int!, memberId: Int!): GroupMember
+  createGroup(group_name: String!, group_type:String!,group_description:String!, group_leader: Int!): Group
+  updateGroup(group_id: Int!, group_name: String,group_type:String,group_description:String, group_leader: Int): Group
+  deleteGroup(group_id: Int!): Group
+
+  addGroupMember(group_id: Int!, member_id: Int!): GroupMember
   removeGroupMember(groupId: Int!, memberId: Int!): GroupMember
+
   recordDonation(memberId: Int!, amount: Float!, date: String!): Giving
+
   createEvent(name: String!, date: String!): Event
   updateEvent(id: Int!, name: String, date: String): Event
   deleteEvent(id: Int!): Event
@@ -60,7 +63,7 @@ type Mutation {
 }
 
 type Member {
-  member_id: ID
+  member_id: Int
   first_name: String
   last_name: String
   date_of_birth: String
@@ -74,16 +77,19 @@ type Member {
   parent_id: Int
 }
 
+
 type Group {
-  id: Int!
-  name: String!
-  leader: Member
-  members: [Member]
+  group_id: Int!
+  group_name: String!
+  group_type: String!
+  group_description: String
+  group_leader:Member!
+  group_members: [Member]
 }
 
 type GroupMember {
-  group: Group!
-  member: Member!
+  group_id: Group!
+  member_id: Member!
 }
 
 type Giving {
