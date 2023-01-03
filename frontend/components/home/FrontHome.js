@@ -16,6 +16,7 @@ export default function FrontHome() {
     <div className="space-y-20 ">
       
       <Intro/>
+      
       <Pastorals/>
       <Groups/>
       <Groups2/>
