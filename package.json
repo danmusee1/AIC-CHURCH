@@ -5,7 +5,7 @@
   "main": "backend/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend/server.js",
+    "start": "concurrently \"node backend/server.js\"\"cd frontend && npm run dev",
     "dev": "nodemon backend/server.js"
   },
   "repository": {
@@ -32,7 +32,8 @@
     "graphql-scalars": "^1.20.1",
     "next": "^13.1.1",
     "pg": "^8.8.0",
-    "pg-promise": "^10.15.4"
+    "pg-promise": "^10.15.4",
+    "react-intersection-observer": "^9.4.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

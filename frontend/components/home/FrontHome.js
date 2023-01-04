@@ -7,7 +7,9 @@ import InfoPage from './InfoPage'
 import Podcast from './Podcast'
 import FriendsCards from './FriendsCards'
 import Newcommer from './Newcommer'
-import { Pastorals } from '../pastoral team/Pastorals'
+import Pastorals from '../pastoral team/Pastorals'
+import Flayer from '../pastoral team/Flayer'
+
 
 export default function FrontHome() {
   return (
@@ -16,8 +18,11 @@ export default function FrontHome() {
     <div className="space-y-20 ">
       
       <Intro/>
+      <div id='give_background1' className='h-screen snap-y snap-mandatory snap-center'>
+      <Flayer/>
+     <Pastorals/>
+      </div>
       
-      <Pastorals/>
       <Groups/>
       <Groups2/>
     <InfoPage/>

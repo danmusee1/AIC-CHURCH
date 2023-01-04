@@ -27,6 +27,8 @@ type Mutation {
     last_name: String!
     position:String!
     mission: String!
+    pastoral_email: String!
+    pastoral_phonenumber: String!
   ):Pastoral
 
   updatePastoral(
@@ -35,6 +37,8 @@ type Mutation {
     last_name: String
     position:String
     mission: String
+    pastoral_email: String
+    pastoral_phonenumber: String
   ): Pastoral
 
   createMember(
@@ -106,6 +110,8 @@ type Pastoral {
   last_name: String
   position:String
   mission: String
+  pastoral_email: String
+  pastoral_phonenumber: String
 }
 
 
