@@ -10,6 +10,14 @@ const root = {
       const result = await pool.query('SELECT * FROM members WHERE member_id= $1', [member_id]);
       return result.rows[0];
     },
+    pastorals: async () => {
+      const result = await pool.query('SELECT * FROM pastorals');
+      return result.rows;
+    },
+    pastoral: async ({ pastoral_id}) => {
+      const result = await pool.query('SELECT * FROM pastorals WHERE pastoral_id= $1', [pastoral_id]);
+      return result.rows[0];
+    },
     groups: async () => {
       const result = await pool.query('SELECT * FROM groups');
       return result.rows;

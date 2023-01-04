@@ -4,6 +4,10 @@ const schema = buildSchema(`
 type Query {
   members: [Member]
   member(member_id: Int): Member
+ 
+  pastorals: [Pastoral]
+  pastoral(pastoral_id: Int): Pastoral
+
   groups: [Group]
   group(group_id: Int!): Group
   group_members(group_id: Int!): [Member]
@@ -13,7 +17,26 @@ type Query {
   attendance(event_id: Int!): [Attendance]
 }
 
+
+
+
 type Mutation {
+  createPastoral(
+    pastoral_id: Int
+    first_name: String!
+    last_name: String!
+    position:String!
+    mission: String!
+  ):Pastoral
+
+  updatePastoral(
+    pastoral_id: Int!
+    first_name: String
+    last_name: String
+    position:String
+    mission: String
+  ): Pastoral
+
   createMember(
     member_id: Int,
     first_name: String!
@@ -75,6 +98,14 @@ type Member {
   zip: String
   membership_date: String
   parent_id: Int
+}
+
+type Pastoral {
+  pastoral_id: Int
+  first_name: String
+  last_name: String
+  position:String
+  mission: String
 }
 
 
