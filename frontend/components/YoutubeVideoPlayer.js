@@ -2,9 +2,11 @@ import React from 'react'
 import ReactPlayer from 'react-player/youtube'
 function YoutubeVideoPlayer() {
   return (
-    <div className='pt-20 pl-40'>
+    <div className=''>
       <ReactPlayer
-       url="https://www.youtube.com/watch?v=DuudSp4sHmg"
+       url="https://www.youtube.com/watch?v=TsEMuvXnnpc"
+      height="600px"
+      width="100%"
       />
     </div>
   )
