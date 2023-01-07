@@ -10,7 +10,9 @@ import FrontHome from '../components/home/FrontHome'
 
 
 
-export default function Home() {
+
+export default function Home({ results }) {
+ 
   
   return (
     <div  >
@@ -27,6 +29,7 @@ export default function Home() {
       <div className="space-y-20 ">
         
         <FrontHome/>
+
       <Footer/>
       </div>
       
