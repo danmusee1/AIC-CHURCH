@@ -13,7 +13,10 @@ export default function Intro() {
         <div className="relative pt-20   px-1 lg:px-10   gap-1 lg:gap-4 flex flex-col space-y-1 lg:space-y-4   ">
         <div>
             <h1 className='text-5xl lg:text-6xl font-bold lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white color: rgb(0 0 0); link link-underline link-underline-black  items-center justify-center   '> 
-            Discover God.
+            Year Of
+            </h1>
+            <h1 className='text-5xl lg:text-6xl font-bold lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white color: rgb(0 0 0); link link-underline link-underline-black  items-center justify-center   '> 
+            Celebrating Divine Victory.
             </h1>
         </div>
         <div>
