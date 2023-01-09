@@ -3,7 +3,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-
+import Link from "next/link";
 
 function Footer() {
 	return (
@@ -25,18 +25,26 @@ function Footer() {
 				<div className="p-5">
 					<ul>
 						<p className="text-gray-800 font-bold text-2xl pb-4">I’m New</p>
+						<Link href="/imNew">
 						<li className="link link-underline link-underline-black text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
                         First Steps
 						</li>
+						</Link>
+						<Link href="/events">
 						<li className="link link-underline link-underline-black text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
                         Events
 						</li>
+						</Link>
+						<Link href="/groups">
 						<li className="link link-underline link-underline-black text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
                         Ministries
 						</li>
+						</Link>
+						<Link href="/">
 						<li className="link link-underline link-underline-black text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
                         Contact Us
 						</li>
+						</Link>
 					</ul>
 				</div>
 				<div className="p-5">
