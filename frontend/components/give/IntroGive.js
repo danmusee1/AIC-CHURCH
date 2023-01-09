@@ -37,7 +37,7 @@ export default function IntroGive() {
             </div>
             <div className="lg:w-2/3 ">
                 <h1 className="text-center text-gray-500 text-lg pb-5 ">
-                Thank you for your interest in donating to the Bay Area Christian 
+                Thank you for your interest in donating to the AIC UMOJA 
                 Church general fund. We are grateful for your contribution. 
                 If you have any questions about giving, email us at aicumoja.nrb@gmail.com.
                  For questions about donating stock, email us at aicumoja.nrb@gmail.com.

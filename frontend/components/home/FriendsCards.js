@@ -16,7 +16,7 @@ export default function FriendsCards() {
         <div className="lg:ml-20 pl-10 pr-10 lg:pl-80 space-y-5  lg:justify-center block ">
             <h1 className="text-gray-900 text-2xl lg:text-4xl font-bold mb-2"> 
             Discover friends, family, and  <a className="underline   decoration-sky-500/70">purpose</a> </h1>
-            <h1 className="lg:pl-20 text-gray-700 lg:text-2xl mb-4">check out different ways to get involved with AIC</h1>
+            <h1 className="lg:pl-20 text-gray-700 lg:text-2xl mb-4">check out different ways to get involved with AIC UMOJA</h1>
         </div>
         
         <motion.div 

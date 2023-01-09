@@ -157,9 +157,9 @@ export default function Contribution() {
                         </h1>
                 </div>
                 <div className='text-gray-500 pb-5'>
-                You can send checks to 2479 E.
-                 Bayshore Rd Ste 170,
-                  Palo Alto CA 94303
+                You can send checks .
+                 Umoja Rd Ste ,
+                  umoja inaccore 
                 </div>
                 <div className="flex">
                     <h1 className="font-bold">

@@ -39,8 +39,7 @@ export default function GiveSpecial() {
                 
 Donate via our PayPal Giving Fund page,
  or use the PayPal app. Simply select 
- “Support a charity” and search for Bay Area
- Christian Church.
+ “Support a charity” and search for AIC UMOJA CHURCH.
                 </h1>
                 <h1 className='pb-10 pt-5 text-sm font-bold '>MAKE A DONATION</h1>
             </div>

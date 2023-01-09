@@ -20,7 +20,7 @@ export default function Groups2() {
  <div className="flex pl-2 lg:pl-20 pb-20 lg:pt-20">
     <div className="pl-10 space-y-5  justify-center block p-6 rounded-lg shadow-lg bg-gray-400 max-w-sm">
             <h1 className="text-gray-900 text-4xl font-bold mb-2">    Jesus and the Power of Storytelling</h1>
-            <h1 className="text-gray-700 text-1xl mb-4">A new series about the parables of Jesus and how they make God personal to us. Check out the combined library of content from both Deep Spirituality and the Bay Area Christian Church.</h1>
+            <h1 className="text-gray-700 text-1xl mb-4">A new series about the parables of Jesus and how they make God personal to us. Check out the combined library of content from both Deep Spirituality and the AIC UMOJA CHURCH.</h1>
             <Link href="storyTelling">
                 
                   <button className="animate-bounce text-green-900">view ministries</button>
