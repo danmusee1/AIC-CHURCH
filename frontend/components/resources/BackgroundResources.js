@@ -4,7 +4,7 @@ import React from 'react'
 export default function BackgroundResources() {
   return (
     <div>
-    <div className="  pb-20 ">
+    <div className="  pb-5 ">
     <div id='resourcespage_background'className=''>
       <div className="pt-20   grid justify-items-center"> 
       <div className="grid pb-5 lg:pb-5  ">
